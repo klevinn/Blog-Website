@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: robotomedium ;
+  background-position:center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/mainbg.webp);
+}
+
+
+/*banner*/
+
+.banner{
+  overflow:hidden;
+  height:25vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/mainbg.webp);
+  /*bg image styling */
+  background-color:black;
+  background-size: contain;
+}
+
+.banner h2{
+  margin-top:13vh;
+}
+
+/* selection div */
+
+.cont{
+  display:flex;
+  height:75vh;
+}
+
+.cont div {
+  /*flex */
+  -ms-flex: 1;  /* IE 10 */
+  flex: 1;
+  background-color: black;
+  transition: 0.3s 0.1s cubic-bezier(0.77, 0, 0.175, 1);
+  border:1px solid black;
+}
+
+/*sttyling of images*/
+.cont img {
+  height:100%;
+  width:100%;
+  opacity: 0.7;
+}
+
+/*on hover div image becomes transparent */
+.cont img:hover{
+  opacity:0;
+}
+
+/*onhover it covers the whole div and changes background img*/
+.petgirl:hover {
+  flex: 0 0 100%; /*stretched to whole screen */
+  /*bg styling n image change */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/sbackground.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.knw:hover {
+  flex: 0 0 100%; /*stretched to whole screen */
+  /*bg styling n image change */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/kbackground.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/*responsiveness, makes it vertical*/
+@media screen and (max-device-width: 1000px){
+  .cont{
+    flex-direction:column; /*vertical alignment of div*/
+    height: auto;
+  }
+}
+
+@media(max-device-width:427px){
+  .container{
+    margin:0; /*no unneeded spaces */
+  }
+}

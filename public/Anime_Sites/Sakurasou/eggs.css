@@ -1,0 +1,21 @@
+
+/*Top Part*/
+.toppity{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./sakurasou_images2/sakurasoubannerbg.webp);
+
+}
+
+
+/*styling of img */
+.scoreb{
+  height: 200px;
+  width: 400px
+}
+
+/*responsiveness fit to scren */
+@media(max-width:404px){
+  .scoreb{
+    width: 100vw;
+  }
+}

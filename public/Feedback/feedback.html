@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback</title>
+    <!-- image for logo -->
+    <link rel="icon" href="../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../CSSfiles/loadingscreen.css">
+    <link rel="stylesheet" href="../CSSfiles/footer.css">
+    <!-- fa icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../index.html" class="logo" id="bypass"><img src=../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- responsiveness -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!-- hambuerger -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- navbar links -->
+        <ul class="navR" id="navbarR">
+          <!-- search bar -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- searchbar links -->
+            <div id="select">
+              <p><a href="../Anime_Sites/Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a class="active" id="activeT" href="#">Feedback</a></li>
+          <li><a href="../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a href="../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--cOntent-->
+    <div class="fbleft">
+      <!-- button to top -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+      <!--content-->
+      <h2>Feedback Form</h2>
+      <p>BEFORE CONTACTING ME, please look at these <a href="./faq.html">FAQs</a> before asking me a question to see if it has already been addressed.</p>
+      <p>Use this form to provide me with feedback about the site. Use it to send me any changes you want made or any additions you would like. This form also doubles up as a contact me form if you do not wish to use any of social medias i have mentioned in my <a href="../AboutMe/aboutme.html">About Me</a> page. However I highly recommend using those ways as I check those more frequently than the responses of the forms.</p>
+      <br />
+      <p>Regarding the multimedia assets used in the website(this includes the iframes of spotify songs and youtube videos) , I will be doing my best to credit them if possible. However due to it interfering with the layout of the page, I believe some would be left uncredited. I will also try my best to mention everything in my <a href="./acknowledgement.html">Acknowledgement Page</a>. Lastly, all forms of media do not belong to me and credit is given to the respective creators. However, if anyone is unhappy with my usage of their work, please contact me through the form or my socials and let me know. I will take it down immediately!</p>
+    </div>
+
+    <!-- form -->
+    <div class="fbright">
+      <fieldset style="background-color:rgba(0,0,0,0.67)">
+        <legend>Feedback Form</legend>
+        <form method="get" action="formsubmission.html">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="Name " placeholder="Samantha Wiggins" required> <br />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="Email " placeholder="ab12@email.com" required> <br />
+          <label for="num">Phone number</label>
+          <input type="number" id="num" name="Number " placeholder="33445567" required> <br />
+          <label for="type">Type Of Feedback:</label>
+          <select name="type" id="type">
+            <option value="Content">Content</option>
+            <option value="Look&Feel">Look & Feel</option>
+            <option value="Copyright">Copyright</option>
+            <option value="Others">Others</option>
+          </select>
+          <label for="subject">Message</label>
+          <textarea id="subject" name="Feedback " placeholder="Write your complaint / feedback." style="height:200px"></textarea>
+          <br />
+          <input onclick="store()" type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
+      </fieldset>
+    </div>
+
+    <br style = "clear:both;">
+
+    <!--footer-->
+    <div style="margin-top:5%">
+      <!-- specialised footer box -->
+      <div id="footer2" class="overlapbox">
+        <h2 style="text-align:center ; color:black; margin:0;">Contact Me</h2>
+        <h6 style="text-align:center ; color:black;">Psst! Hover over the icons for the details!</h6>
+        <div class="gmail">
+          <img class="Email" src="../ImageFiles/About_Me/gmail.webp" alt="Gmail Logo">
+          <div class="hide">calvinlyn11@gmail.com</div>
+        </div>
+        <div class="insta">
+          <img class="Gram" src="../ImageFiles/About_Me/insta.webp" alt="Instagram Logo">
+          <div class="hideI">@calpinn.__</div>
+        </div>
+        <div class="twit">
+          <img class="Twitter" src="../ImageFiles/About_Me/twitter.webp" alt="Twitter Logo">
+          <div class="hideT">@mrweeaboo_</div>
+        </div>
+        <div class="disc">
+          <img class="Discord" src="../ImageFiles/About_Me/disc.webp" alt="Discord Logo">
+          <div class="hideD">noisy#6969</div>
+        </div>
+        <div class="num">
+          <img class="Number" src="../ImageFiles/About_Me/phone.webp" alt="Phone Logo">
+          <div class="hideN">+6593257723</div>
+        </div>
+      </div>
+      <!-- standardised footer (referenced)-->
+      <div class="footer">
+        <div class = "l0go">
+          <img style="width:50%;height:50%" src="../ImageFiles/logo.webp" alt="Logo">
+        </div>
+        <!-- navbar links -->
+        <div class="container">
+          <div class="row">
+            <div class="footercontent">
+              <h4>Sakurasou</h4>
+              <ul>
+                <li><a href="../Anime_Sites/Sakurasou/sakurasou.html">About</a></li>
+                <li><a href="../Anime_Sites/Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                <li><a href="../Anime_Sites/Sakurasou/manga.html">Manga</a></li>
+                <li><a href="../Anime_Sites/Sakurasou/easteregg.html">Easter Eggs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Kimi No Na Wa</h4>
+              <ul>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Takayan</h4>
+              <ul>
+                <li><a href="../Music_Sites/Takayan/takayan.html">About</a></li>
+                <li><a href="../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Tuyu</h4>
+              <ul>
+                <li><a href="../Music_Sites/TUYU/tuyu.html">About</a></li>
+                <li><a href="../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Feedback</h4>
+              <ul>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="acknowledgement.html">Acknowledgement</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+              </ul>
+            </div>
+            <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- loading screen -->
+    <div class="loader" id="loader">
+      <img src="../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- firebase database setup -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+    <script src="../Javascript/loadingscreen.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBtXSr37AesE65ky0PhXmnA97kjJpHj_qE",
+        authDomain: "calvin-webdev.firebaseapp.com",
+        databaseURL: "https://calvin-webdev-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "calvin-webdev",
+        storageBucket: "calvin-webdev.appspot.com",
+        messagingSenderId: "1081637522778",
+        appId: "1:1081637522778:web:d786a8d36070d69130b763",
+        measurementId: "G-K00Y0P22WR"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      let details = firebase.database().ref("infos")
+
+      //store data
+      function store() {
+        var email= document.getElementById("email");
+        var name= document.getElementById("fname");
+        var number= document.getElementById("num");
+        var type = document.getElementById("type")
+        var subject= document.getElementById("subject");
+        //sessionstorage is a form of webstorage
+        //used to store the data inputted
+        sessionStorage.setItem("Email", email.value);
+        sessionStorage.setItem("First Name", name.value);
+        sessionStorage.setItem("Number", number.value);
+        sessionStorage.setItem("Type", type.value);
+        sessionStorage.setItem("Subject", subject.value);
+
+        saveFeedback(name.value , email.value, number.value, type.value, subject.value)
+      }
+
+      //send to firebase
+      function saveFeedback(name, email, number, type, subject){
+        let feedbackDetails= details.push();
+
+        feedbackDetails.set({
+          Name:name,
+          Email: email,
+          Contact: number,
+          Type: type,
+          Feedback: subject,
+        })
+      }
+
+    </script>
+  </body>
+</html>

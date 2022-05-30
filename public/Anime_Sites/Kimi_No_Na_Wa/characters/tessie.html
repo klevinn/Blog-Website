@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Characters</title>
+    <!-- Link to icon -->
+    <link rel="icon" href="../../../ImageFiles/logo.webp">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="chars.css">
+    <link rel="stylesheet" href="../../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/sidebar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../knnwgeneral.css">
+    <link rel="stylesheet" href="../../../CSSfiles/loadingscreen.css">
+    <!-- Link for fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../../index.html" class="logo" id="bypass"><img src=../../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- Responsiveness (Mobile) -->
+        <input type="checkbox" id="check">
+        <!-- Hamburger -->
+          <label for="check" class="checkbtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <!-- Navbar Links -->
+        <ul class="navR" id="navbarR">
+          <!-- Search bar -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- Search Bar links -->
+            <div id="select">
+              <p><a href="../../Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../../Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../../Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../../Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../../Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../../Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../../Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../../Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../../Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../../Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../../Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1><i>Teshigawara Katsuhiko</i></h1>
+      <h3>Scroll to read more</h3>
+    </div>
+
+    <!-- Content -->
+    <div class = animeK_info>
+      <!--sidebar -->
+      <nav class="main-menu">
+        <!-- Sidebar links -->
+        <ul>
+          <li>
+            <a href="../kiminonawwa.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../knnwchars.html">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <span class="nav-text">
+            Characters
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../knnweastereggs.html">
+            <i class="fa fa-etsy fa-2x"></i>
+            <span class="nav-text">
+            Easter Eggs
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../knwmanga.html">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text">
+            Manga / LN
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--content-->
+      <div class = "inform">
+        <!--Back to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <!--Scrolling to content on page -->
+        <nav class="redirect">
+          <a style="width:33%" href="#about">About</a>
+          <a style="width:33%" href="#Relationships">Relationships</a>
+          <a style="width:33%" href="#facts">Fun Facts</a>
+          <br style="clear:both;">
+        </nav>
+        <!--Content-->
+        <div class="fleft">
+          <h2 style="text-align:center;">About Teshigawara Katsuhiko</h2>
+          <p>
+            Appearance : Teshigawara is a young man who is quite tanned with an average build and height. He has thick dark eyebrows and hazel eyes. He has black hair thats normally shaved. As he grew older, he grew taller , still had a shaved head with a beard stubble thats growing. <br />
+            &nbsp; <br />
+            Japanese Name : 勅使河原 克彦<br />
+            &nbsp; <br />
+            Gender : Male <br />
+            &nbsp; <br />
+            Birthday : January 18th 1996<br />
+            &nbsp; <br />
+            Zodiac : Capricorn<br />
+            &nbsp; <br />
+            Occupation : Unknown<br />
+            &nbsp; <br />
+          </p>
+
+          <table border="1">
+            <tr>
+              <td>Japanese VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/41468/Ryou_Narita">Ryou Narita</a></td>
+            </tr>
+            <tr>
+              <td>English VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/336/Kyle_Hebert"></a>Kyle Herbert</td>
+            </tr>
+            <tr>
+              <td>Mandarin VA</td>
+              <td><a href=""></a></td>
+            </tr>
+          </table>
+        </div>
+
+        <!--Interactiveness -->
+        <div class="fright">
+          <!--Cannot find voicelines, not implemented-->
+          <!--audio id="audio" src=""></audio-->
+          <a href="#" id="play">
+          <img class="first" src="./charimages2/youngertessie.webp" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Character Logo" >
+          </a>
+          <h4 style="text-align:center">Hover to see his future self!</h4>
+          <h4 style="text-align:center">Currently no voicelines</h4>
+        </div>
+        <br style="clear:both;">
+
+        <!-- Id for anchor redirect -->
+        <hr id="about" >
+        <p>
+          About: Teshigawara Katsuhiko also known as Tessie by <a href="mitsuha.html">Mitsuha</a> & <a href="sayaka.html">Sayaka</a> is a side character in Kimi No Na Wa. He is one of Mitsuha's close friends. He initially had a crush on Mitsuha . His parents forces him to take over the construction business one day which leads to him having a knack for machinery such as explosives.<br />
+          <br />
+          &nbsp;<br />
+          Personality : Tessie is a happy-go-lucky person that gets flustered easily when speaking to Mitsuha. He is kind and willing to do anything for his friend. He also often complains how boring the place he lives in with nothing to do.<br />
+        </p>
+        <br />
+
+        <!-- Id for anchor redirect -->
+        <hr id="Relationships" >
+        <h2 style="text-align:center;">Relationships</h2>
+        <h2>Family</h2>
+        <p>
+          Mother: Unknown<br />
+          Father: Unknown <br />
+          Grandmother : Unknown<br />
+          &nbsp;<br />
+        </p>
+        <h2>Friends</h2>
+        <p>
+          <a href="mitsuha.html">Mitsuha Miyamizu</a> <br />
+          &nbsp; <br />
+          Seen in <a href="mitsuha.html#Relationships">Mitsuha Miyamizu's</a> page <br />
+          &nbsp; <br />
+          <a href="sayaka.html">Sayaka Natori</a> <br />
+          &nbsp; <br />
+          Part of the Mitsuha friend group, Mitsuha, Sayaka and Teshigawara. She often teases and bullies Tessie. She also has a crush on Tessie but refuses to acknowledge it <br />
+          &nbsp; <br />
+          <a href="taki.html">Taki Tachibana</a> <br />
+          &nbsp; <br />
+          Indirectly met through body switching phenomenom. Tessie found the 'new' Mitsuha's personality as confusing as normal. <br />
+          &nbsp; <br />
+        </p>
+        <h2>Co-Workers</h2>
+        <p>
+          Unnamed Parents in Construction Company.
+        </p>
+        <br />
+
+        <!-- Id for anchor redirect -->
+        <hr  id="facts">
+        <h2 style="text-align:center">Fun Facts!</h2>
+        <p>
+          Makoto Shinkai revealed that Tessie is an image of his own childhood, as his parents were running a construction company and forced him to take over the business one day, just like Tessie in the movie
+        </p>
+      </div>
+
+      <!--Footer-->
+      <div style="margin-top:5%;z-index: 1; position:relative;">
+        <!-- Specialised box on footer -->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://myanimelist.net/anime/28851/Koe_no_Katachi">A Silent Voice</a> <br />
+            Its a Romantic Drama Movie that i highly recommend. It is able to trigger many emotions in me and also is able to show the problems the characters are tackling in depth
+          </p>
+          <p class="disclaimer">
+            Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers
+          </p>
+        </div>
+
+        <!--standardised footer (referenced)-->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%; height:50%" src="../../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../../Sakurasou/sakurasou.html">About</a></li>
+                  <li><a href="../../Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../../Sakurasou/manga.html">Manga</a></li>
+                  <li><a href="../../Sakurasou/easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../kiminonawwa.html">About</a></li>
+                  <li><a href="../knnwchars.html">Characters</a></li>
+                  <li><a href="../knwmanga.html">Manga</a></li>
+                  <li><a href="../knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                  <li><a href="../../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Loading Screen-->
+    <div class="loader" id="loader">
+      <img src="../../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!--Javascript-->
+    <script src="../../../Javascript/loadingscreen.js"></script>
+    <script>
+      //music played on click
+      document.getElementById('play').addEventListener('click', function (e) {
+        e.preventDefault(); //prevents page redirect
+        document.getElementById('audio').play(); //play audio file
+      });
+
+      //image change on hover and unhover
+      function hover(element) {
+        element.setAttribute('src', './charimages2/oldertessie.webp');
+      };
+
+      function unhover(element) {
+        element.setAttribute('src', './charimages2/youngertessie.webp');
+      };
+
+      //smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); //prevents it from redirecting
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth' //smooth scrolling on click
+            });
+        });
+      });
+
+    </script>
+  </body>
+</html>

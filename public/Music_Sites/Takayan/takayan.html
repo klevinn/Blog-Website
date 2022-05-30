@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Takayan</title>
+    <!-- image for logo -->
+    <link rel="icon" href="../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="takageneral.css">
+    <link rel="stylesheet" href="../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../../CSSfiles/loadingscreen.css">
+    <link rel="stylesheet" href="../../CSSfiles/sidebar.css">
+    <!-- fa icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../index.html" class="logo" id="bypass"><img src=../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- responsiveness -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!-- hamburger -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="navR" id="navbarR">
+          <!-- search bar -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- searchbar links -->
+            <div id="select">
+              <p><a href="../../Anime_Sites/Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="takayan.html">Takayan : About</a></p>
+              <p><a href="takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+          <li><a class="active" id="activeT" href="../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a href="../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1>Takayan</h1>
+      <h3>Scroll to read more</h3>
+    </div>
+
+    <!-- Content -->
+    <div class = music_info>
+      <!--sidebar -->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="#">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./takasongs.html">
+            <i class="fa fa-music fa-2x"></i>
+            <span class="nav-text">
+            Top / Recent Songs
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--Synopsis-->
+      <div class=synopsis>
+        <!-- back to top buttom -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+        <div class="fleft">
+          <h2 style="text-align:center;">About</h2>
+          <p>
+            Name : Takayan (たかやん) <br />
+            Gender : Male <br />
+            Birthday : January 10, 1998 (age 23) <br />
+            Genre : Hip Hop , Rap <br />
+            Occupation : Rapper <br />
+            Place of birth: Aichi Prefecture, Japan <br />
+            Currently living in: Shinjuku, Tokyo <br />
+            Main Language : JAPANESE !! <br />
+            <br />
+            His <a target="_blank" href="https://twitter.com/takayan_gorizal">Twitter</a> <br />
+            His <a target="_blank" href="https://www.youtube.com/channel/UCHGGjDM6Z7nq5qBIPzn1D7Q">Youtube</a> <br />
+            His <a target="_blank" href="https://bit.ly/30g1mNT">Instagram</a> <br />
+            His <a target="_blank" href="https://www.tiktok.com/@takayan_gorizal">Tiktok</a> <br />
+            His <a target="_blank" href="https://open.spotify.com/artist/79JgYJHiBUZcvYqOC5Zufn">Spotify</a>
+          </p>
+          <hr>
+          <h2 style="text-align:center;">Some Fun Facts</h2>
+          <h3 style="text-decoration:underline;">Choice Of Food</h3>
+          <ul>
+            <li>Main: BBQ beef, curry, sushi, salad </li>
+            <li> He prefers Beef over all the types of meat </li>
+            <li>He loves philippine bananas </li>
+            <li>He likes chocolate foods, like cakes and cookies </li>
+          </ul>
+          <br />
+          <h3 style="text-decoration:underline;">Favourite</h3>
+          <ul>
+            <li>Colour: Black, Purple </li>
+            <li>Games: Brawlhalla & PUBG </li>
+            <li>Anime: Mahou shoujo site </li>
+            <li style="margin-bottom:2%">Manga: みつどもえ Mitsudomoe </li>
+            <li>He has a pet dog, a corgi. As seen on the right</li>
+          </ul>
+        </div>
+
+        <!-- images -->
+        <div class="fright">
+          <img src="./takayan_images/takayan.webp" alt="Takayan Image"><br />
+          &nbsp; <br />
+          <img style="width:90%;" src="./takayan_images/doggo.webp" alt="Takayan Dog Image">
+        </div>
+
+        <br style="clear:both;">
+
+        <!-- content -->
+        <div>
+          <hr>
+          <h2 style="text-align:center;">About the Music he produces</h2>
+          <ul>
+            <li>He started off as a Utaite. A Utaite is someone who posts covers of previously released songs on Youtube or <a target="_blank" href="https://www.nicovideo.jp/">Nico Nico Douga</a></li>
+
+            <li> <a target="_blank" href="https://utaite.fandom.com/wiki/Utaite">Here</a> is a link that talks more about it.</li>
+
+            <li>Takayan has been producing his own music since 2015 on top of making covers.</li>
+
+            <li>Takayan produces everything himself, he produces the lyrics, music, instrumentals et cetera. He does occasionally use instrumentals by other artists, however they are properly creditted and he has been allowed to do so.</li>
+
+            <li id="stup">  He was in a group called Stupid Guys with <a target="_blank" href="https://www.youtube.com/channel/UCBJXdxs0Dq6UWhgApYMajiQ">Domura Riu</a>. However I cannot find any songs produced by them anymore. </li>
+          </ul>
+          <br />&nbsp; <br />
+          <ul>
+            <li>Nowadays he makes original songs, though they may be explicit, many of his songs are targetted at real life problems. He still makes covers / remixes of covers but not as often as he focuses more on original music</li>
+
+            <li>He posts once a week showcasing the lyric videos of the songs he produced and many other things on his Youtube Channel</li>
+
+            <li> Takayan's lyrics mainly speak about the matters of depression and how many people are facing it. His genre of lyrics normally head down into a dark route tackling real life problems that may be relateable to adolescent teens and et cetera.</li>
+
+            <li> His lyrics are also depicting more of things that can cause these mental stress such as depression. He has many songs about cheating, suic*de and other things related to depression.</li>
+
+            <li>He sings for the LGTBQ+ community, however he himself is heterosexual.
+            </li>
+            <li>
+              Its also said that his lyrics are 60% Experience 40% Fantasy
+            </li>
+          </ul>
+
+          <br />
+
+          <p>I believe his lyrics aim to raise awareness of the distress these victims face through a form of media that many people can indulge in. Its a type of media also where people don't really need to be hands-on and just listen. <br />
+            <br />
+            <a target="_blank" href="https://twitter.com/takayan_110/status/1405487892466520065?s=19">This</a> is one of my favourite tweets of his is where he says that "Instead of taking drugs, take a dose of my music"
+          </p>
+          <br />
+          <hr>
+          <h2 style="text-align:center;">His Youtube Content</h2>
+          <p>His youtube videos nowadays mainly show lyric videos of the songs he has already published onto Spotify. Last time he used to post covers of himself singing songs</p>
+          <ol>
+            <li style="margin-bottom:2%">
+              Takayan's First Video (Face Reveal for those who follow him on Nico Nico) <br />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CcQP6KpSw0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+
+
+            <li style="margin-bottom:2%">
+              Takayan's Recent video <br />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QbtvqzZJIEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+
+            <li>
+              Takayan's Most Viewed Video (One of his top few songs) <br />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/v4WsQsRgbls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+
+          </ol>
+          <h2 style="text-align:center;">His Instagram Lives</h2>
+          <h3 style="text-decoration:underline;">I could not find any videos showing his covers so here is a video of him Freestyling on his Instagram</h3>
+          <ol>
+            <li>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_8mGvLYq2rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+          </ol>
+        </div>
+        <hr>
+        <div>
+          <h2 style="text-align:center;">Personal Opinions of Takayan</h2>
+          <p>Takayan is an extremely talented rapper.He has extremely good sense in music. I like all of his songs. He is able to properly convey the message of his songs in his lyrics and he is also able to properly use the beat and instrumental to make the music more enjoyable for the people listening. His lyrics also hit home for me and probably a lot of other people, which makes the music more enjoyable and relateable. His carefree personality on his Instagram lives and et cetera makes him very comforting at times. I highly recommend listening to his music especially if you are going through a tough time.</p>
+          <br />
+          <p>
+            My favourite song of his was Want a boyfriend but it has been removed from spotify.
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NMKiqaJAeuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br />
+            However my close second is Everyone is Trash
+            <iframe src="https://open.spotify.com/embed/track/6WWHNF9dBu7beqZvOGPbU2" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </p>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div style="margin-top:5%; z-index: 1;
+        position:relative;">
+        <!-- specialised footer -->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://open.spotify.com/artist/3sIalaTfShc1biZjHCCVkv">Kamiyama Yoh</a>
+            <br />
+            His music is more slow paced as compared to Takayan but his lyrics are similar in terms of tackling problems that are faced by teenagers.
+          </p>
+        </div>
+
+        <!-- footer links -->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%; height:50%" src="../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../../Anime_Sites/Sakurasou/sakurasou.html">About</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/manga.html">Manga</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../TUYU/tuyu.html">About</a></li>
+                  <li><a href="../TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- loading screen -->
+    <div class="loader" id="loader">
+      <img src="../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- js -->
+    <script src="../../Javascript/loadingscreen.js" ></script>
+    <script ></script>
+  </body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Characters</title>
+    <!-- link for logo -->
+    <link rel="icon" href="../../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="char.css">
+    <link rel="stylesheet" href="../../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/sidebar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../sakurasougeneral.css">
+    <link rel="stylesheet" href="../../../CSSfiles/loadingscreen.css">
+    <!-- fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../../index.html" class="logo" id="bypass"><img src=../../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- Responsiveness (mobile) -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!-- hamburger -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- navbar links -->
+        <ul class="navR" id="navbarR">
+          <!-- search bar -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- search bar links -->
+            <div id="select">
+              <p><a href="../sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="jin.html">Sakurasou: Jin</a></p>
+              <p><a href="misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1><i>Jin Mitaka</i></h1>
+      <h3>Scroll to read more</h3>
+    </div>
+
+    <!-- Content -->
+    <div class = anime_info>
+      <!--sidebar -->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="../sakurasou.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../sakurasoumainchar.html">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <span class="nav-text">
+            Characters
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../easteregg.html">
+            <i class="fa fa-etsy fa-2x"></i>
+            <span class="nav-text">
+            Easter Eggs
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../manga.html">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text">
+            Manga / LN
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--content-->
+      <div class = "inform">
+        <!-- back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <!-- Nav for redirect to content on page -->
+        <nav class="redirect">
+          <a style="width:33%" href="#about">About</a>
+          <a style="width:33%" href="#Relationships">Relationships</a>
+          <a style="width:33%" href="#facts">Fun Facts</a>
+          <br style="clear:both;">
+        </nav>
+
+        <!-- content -->
+        <div class="fleft">
+          <h2 style="text-align:center;">About Jin Mitaka</h2>
+          <p>
+            Appearance : He has an average height and build. He has short gray hair that covers his eyes and frames his face. He has grayish-purple eyes and has small oval-shaped glasses.<br />
+            &nbsp; <br />
+            Japanese Name : 三鷹 仁<br />
+            &nbsp; <br />
+            Gender : Male <br />
+            &nbsp; <br />
+            Birthday : September 22<br />
+            &nbsp; <br />
+            Zodiac : Virgo<br />
+            &nbsp; <br />
+            Occupation : Script Writer<br />
+            &nbsp; <br />
+          </p>
+
+          <table border="1">
+            <tr>
+              <td>Japanese VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/79/Takahiro_Sakurai">Takuhiro Sakurai</a></td>
+            </tr>
+            <tr>
+              <td>Japanese VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/13647/Rina_Dendou">Rina Dendou</a></td>
+            </tr>
+            <tr>
+              <td>English VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/14781/Ja_hyeong_Gu">Ja Hyeoung Gu</a></td>
+            </tr>
+            <tr>
+              <td>Korean VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/37373/Scott_Gibbs">Scott Gibbs</a></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- interactiveness -->
+        <div class="fright">
+          <audio id="audio" src="./charsounds/jin.mp3"></audio>
+          <a href="#" id="play">
+          <img class="first" src="./charimages2/jin1.webp" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Character Logo">
+          </a>
+          <h4 style="text-align:center">Hover to see different looks!</h4>
+          <h4 style="text-align:center">Click to hear voicelines!</h4>
+        </div>
+
+        <br style="clear:both;">
+
+        <!-- id for redirect -->
+        <hr id="about" >
+        <p>
+          About: <br />
+          He is a main character in the anime. He is a third year in Suika. He is Misaki Kamiigusa's childhood friend and a giant playboy. He has dated several girls, including Misaki's Sister, but in the end he breaks up with all of them. He has feelings for Misaki but feel like he is out of her league, so he never accepts her until he feels he can match her
+          <br />
+          &nbsp;<br />
+          Personality : <br />
+          Jin is laid-back and caring. He also has quite a shy personality. He has the ability to know a person's personality just by seeing how they work. Jin is very good with his words. His scripts are used for Misaki's anime, and the both of then usually collaborate to make an anime. However, his scripts have been considered by critics, and even Misaki herself, as subpar.
+        </p>
+        <br />
+
+        <!-- id for redirect -->
+        <hr id="Relationships" >
+        <h2 style="text-align:center;">Relationships</h2>
+        <h2>Family</h2>
+        <p>
+          Mother:Unnamed<br />
+          Father: Unnamed <br />
+          &nbsp;<br />
+        </p>
+        <h2>Friends</h2>
+        <p>
+          <a href="sorata.html">Sorata Kanda</a> <br />
+          &nbsp; <br />
+          Seen on <a href="sorata.html#Relationships">Sorata Kanda's</a> page <br />
+          He also confides in Sorata about matters about Misaki when he can't confront her himself
+          &nbsp; <br />
+          Misaki Kamiigusa <br />
+          &nbsp; <br />
+          Jin cares about and loves Misaki a lot. Jin always has Misaki on his mind despite being a massive playboy. He constantly rejects her because he doesn't feel that he's good enough for her. He doesn't want to be swallowed up in Misaki's shadow, due to the gap that existed between them such as her art being highly praised while Jin's scripts are called average. It is also because he somewhat feels jealous about her successes, and wants to see Misaki get crushed. <br />
+          Jin can also tolerate Misaki's shinnenigans despite being annoyed by it soemtimes <br />
+          &nbsp; <br />
+        </p>
+        <br />
+
+        <!-- id for redirect -->
+        <hr  id="facts">
+        <h2 style="text-align:center">Fun Facts!</h2>
+        <p>
+          He was officially married after graduation!
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div style="margin-top:5%;z-index: 1;
+        position:relative;">
+        <!-- specialised box for footer -->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://myanimelist.net/anime/4224/Toradora">Toradora</a><br />
+            Its made by the same studio and also it is another romantic comedy that i highly recommend to others. Look at this site to find out more
+          </p>
+          <p class="disclaimer">
+            Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers.
+          </p>
+        </div>
+
+        <!-- standardised footer (referenced) -->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%;height:50%;" src="../../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../sakurasou.html">About</a></li>
+                  <li><a href="../sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../manga.html">Manga</a></li>
+                  <li><a href="../easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../../Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                  <li><a href="../../Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                  <li><a href="../../Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                  <li><a href="../../Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                  <li><a href="../../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+      <img src="../../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- JS -->
+    <script src="../../../Javascript/loadingscreen.js" ></script>
+    <script>
+    // Javascript has been explained in other pages, so comments will only be a mere summary
+
+      // plays audio on click of anchor tag
+      document.getElementById('play').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('audio').play();
+      });
+
+      // change image on hover and unhover
+      function hover(element) {
+        element.setAttribute('src', './charimages2/jin2.webp');
+      };
+
+      function unhover(element) {
+        element.setAttribute('src', './charimages2/jin1.webp');
+      };
+
+      //smooth scrolling on click of anchor tag
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script>
+  </body>
+</html>

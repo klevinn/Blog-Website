@@ -1,0 +1,123 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../sakurasou_images2/contentbackground.webp);
+  background-position:center; /*bg positioning */
+}
+
+
+/*Banner*/
+.toppity{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../sakurasou_images2/sakurasoubannerbg.webp);
+}
+
+
+/*nav*/
+.redirect {
+  text-align:center;
+  background-color:rgba(0,0,0,0.57);
+  display:flex; /*horizontal instead of vertical */
+}
+
+.redirect a{
+  border: 1px solid white;
+  display:block; /*click on whole box to access*/
+  padding:10px;
+  color:white;
+  text-decoration:none;
+}
+
+
+
+
+/*Main Content Box */
+/*For accordian referenced w3schools */
+/*Summary is style it so that it has 0 height, use JS to make height increase on click*/
+
+.content{
+  max-height: 0;
+  overflow:hidden; /*overflow hidden for accordian to work */
+  background-color: rgba(0,0,0,0.55);
+  padding: 0 18px; /*doesnt touch the edges of box */
+  transition: max-height 0.2s ease-out; /*slide */
+}
+
+/*content box styling */
+
+.collapsible {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  cursor: pointer; /*indicates its interactible */
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.4s; /*for hover */
+}
+
+/*hover color change*/
+.activity, .collapsible:hover {
+  background-color: gray;
+}
+
+
+/* content styling */
+/*flaot left pushes it to the left*/
+.desc{
+  float:left;
+  width:50%;
+}
+
+
+.fleft{
+  width:65%;
+  float:left;
+}
+
+.fright{
+  width:35%;
+  float:right;
+}
+
+.first{
+  width:95%;
+  height:95%;
+}
+
+/* responsiveness so that it fills screen */
+@media(max-width:392px){
+  .fright{
+    width:100%
+  }
+  .fleft{
+    width:100%
+  }
+  .desc{
+    width:100%
+  }
+}
+
+/*image styling */
+
+img{
+  border-radius: 15px;
+}
+
+/*table styling*/
+table {
+  border-collapse: collapse ;
+  margin-left:15%
+}
+
+td {
+  padding : 10px; /*words dont touch edge of screen */
+}
+
+
+
+/*footer styling */
+#footer2{
+  font-size:1.3em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25));
+}

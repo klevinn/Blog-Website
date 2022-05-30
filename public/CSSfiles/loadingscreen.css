@@ -1,0 +1,34 @@
+/*Loading Screen CSS Original*/
+
+/*style of background for loading screen*/
+.loader {
+    background: radial-gradient(#222, #000); /*got circular gradient */
+    bottom: 0; /*helps to make it fit to screen */
+    left: 0; /*helps to make it fit to screen */
+    overflow: hidden;
+    position: fixed;
+    right: 0; /*helps to make it fit to screen */
+    top: 0; /*helps to make it fit to screen */
+    z-index: 99999; /*overlaps EVERYTHING */
+}
+
+/*the loading screen image */
+.loader img{
+  animation: rotation 2s infinite linear; /*rotates it 360*/
+  position:relative;
+  height:25%; /*size of the image */
+  /*Centering*/
+  display: block;
+  margin:auto;
+  top:40%;
+}
+
+/*Rotates the image 360 degrees*/
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: robotomedium;
+  background-position:center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/musicbg.webp);
+}
+
+
+/*banner*/
+
+.banner{
+  overflow:hidden;
+  height:25vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/musicbg.webp);
+  background-color:black;
+  background-size: contain;
+}
+
+.banner h2{
+  margin-top:13vh;
+}
+
+/* selection of div */
+
+.cont{
+  display:flex;
+  height:75vh;
+}
+
+.cont div {
+  -ms-flex: 1;  /*Let all the flexible items be the same length, regardless of its content: */
+  flex: 1;
+  background-color: black;
+  transition: 0.3s 0.1s cubic-bezier(0.77, 0, 0.175, 1);
+  border:1px solid black;
+}
+
+/*sttyling of images*/
+.cont img {
+  height:100%;
+  width:100%;
+  opacity: 0.7;
+}
+
+/*image on hover becomes transparent */
+.cont img:hover{
+  opacity:0;
+}
+
+/*onhover it covers the whole div and changes background img*/
+.taka:hover {
+  flex: 0 0 100%; /*stretches to feel the whole screen */
+  /*bg styling */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/takbackground.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tuyu:hover {
+  flex: 0 0 100%; /*stretches to feel the whole screen */
+  /*bg styling */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./Main_Images/tuybackground.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/*responsiveness, makes it vertical*/
+@media screen and (max-device-width: 1000px){
+  .cont{
+    flex-direction:column; /*vertical alignment */
+    height:auto;
+  }
+}
+
+@media(max-device-width:427px){
+  .container{
+    margin:0;
+  }
+}

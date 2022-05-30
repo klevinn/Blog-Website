@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Songs!</title>
+    <!-- image for logo -->
+    <link rel="icon" href="../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="takasongs.css">
+    <link rel="stylesheet" href="takageneral.css">
+    <link rel="stylesheet" href="../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../../CSSfiles/loadingscreen.css">
+    <link rel="stylesheet" href="../../CSSfiles/sidebar.css">
+    <!-- fa - icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../index.html" class="logo" id="bypass"><img src=../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!--responsiveness -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!-- hamburger-->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="navR" id="navbarR">
+          <!-- searchbar -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- searchbar links -->
+            <div id="select">
+              <p><a href="../../Anime_Sites/Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="takayan.html">Takayan : About</a></p>
+              <p><a href="takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+          <li><a class="active" id="activeT" href="../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a href="../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1>Takayan Songs</h1>
+      <h3>Scroll to read more</h3>
+    </div>
+
+    <!-- Content -->
+    <div class = music_info>
+      <!--sidebar -->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="./takayan.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="#">
+            <i class="fa fa-music fa-2x"></i>
+            <span class="nav-text">
+            Top / Recent Songs
+            </span>
+            </a>
+        </ul>
+      </nav>
+      <!--Content-->
+      <div class="synopsis">
+        <!-- back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <h2>His Top 10 Songs(As of spotify)</h2>
+        <!-- anchor tags that redirect you to pages on the site-->
+        <ol>
+          <li><a href="#cheating">Cheating is A Crime</a></li>
+          <li><a href="#toy">Toy</a></li>
+          <li><a href="#disappear">Just Disappear</a></li>
+          <li><a href="#dream">Its okay to envy (Let's Meet in our Dream album)</a></li>
+          <li><a href="#dream">What's the meaning of Leaving (Let's Meet in our Dream album)</a></li>
+          <li><a href="#example">Bad Example (Bad Example Album)</a></li>
+          <li><a href="#dream">To everyone who want to die (Let's Meet in our Dream album)</a></li>
+          <li><a href="#happiness">Just Hide (Happiness and Correct Answwer album)</a></li>
+          <li><a href="#forever">Be Alright (Please Live Forever album)</a></li>
+          <li><a href="#dream">Date Me! Not Them (Let's Meet in our Dream album)</a></li>
+        </ol>
+      </div>
+      <!-- iframes of music -->
+      <div class="synopsis" id="music">
+        <h2 style=text-align:center>List of his Albums(Newest To Oldest)</h2>
+        <span class="anchor" id="forever"></span>
+        <h3>Please Live Forever</h3>
+        <iframe src="https://open.spotify.com/embed/album/03WIMJP1J7CUwRDGFBTAwM" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>I love you in any way</h3>
+        <iframe src="https://open.spotify.com/embed/album/65NSlJRcSxbRjHQIOzJRkb" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <span class="anchor" id="example"></span>
+        <h3>Bad Example</h3>
+        <iframe src="https://open.spotify.com/embed/album/0xh7CJlj4amfkMLGKZ6mZA" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <span class="anchor" id="dream"></span>
+        <h3>Let's meet in our dreams</h3>
+        <iframe src="https://open.spotify.com/embed/album/1uvDOtYyofHwELgzc6DvoR" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <span class="anchor" id="happiness"></span>
+        <h3>Happiness and correct answer</h3>
+        <iframe src="https://open.spotify.com/embed/album/1DPLTbGxA4c8hm8JZO03Eb" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <hr/>
+        <h2 style=text-align:center;>Older songs no longer found on his spotify</h2>
+
+        <h3>Due to some controversy, there are songs on his spotify that have been taken down. Some of these songs still thrive on his Youtube Channel</h3>
+        <br />
+        <h3>An old song of him when he was in <a href="./takayan.html#stup">Stupid Guys</a></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6GutALqiuQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <br />
+        <h3>Look only at me (Taken down on spotify)</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/okxuv1qz8XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <br />
+        <h3> I hate happy people (Taken down on spotify)</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gJ7oAkuendk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <br />
+        <h3>推しの結婚は信じたくない (Unable to be found on spotify)</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1IwkR-hjR1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <br />
+        <h3>Killed by period pains and depression (Taken down on spotify)</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NkFH0F_dpa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <br />
+        <hr>
+        <h3>A bit more info:</h3>
+        <p>There are a lot more songs that cannot be found on spotify that can be found on YouTube. You should check his youtube channel out to find them, also support him while you are at it. These spotify iFrames are here to let you hear a bit of his music to see if you will get hooked, so please check him out on his spotify and support him there.! <br />
+          If the owner of these vidoes / music are uncomfortable with me using these. Please contact me by my many contact forms stated on the <a href="../../AboutMe/aboutme.html">About Me Page</a>
+        </p>
+      </div>
+
+      <!-- iframe of music -->
+      <div class="synopsis" id="musicr">
+        <h2 style=text-align:center>List of his Singles & EPs(Newest To Oldest)</h2>
+        <h3>Shit Named Gender</h3>
+        <iframe src="https://open.spotify.com/embed/album/4DCm8RLPM8FPFJYtd7xBla" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Love you and your violence</h3>
+        <iframe src="https://open.spotify.com/embed/album/2QULn7sMFo8TKgbUb0avZI" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Will you be a slave, so can you date me?</h3>
+        <iframe src="https://open.spotify.com/embed/album/1kpNVKrerS70pE7eYA2pv9" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Depressed because of you</h3>
+        <iframe src="https://open.spotify.com/embed/album/6m9XJ3lYPAHBuC8u0ImDBl" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>SEKAI</h3>
+        <iframe src="https://open.spotify.com/embed/album/4iWgVOk2V8bkNJXldQJLeu" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Sorry, I'm a human like trash</h3>
+        <iframe src="https://open.spotify.com/embed/album/6fjROmFiqYelRxjJD7ZXBG" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Rebellious</h3>
+        <iframe src="https://open.spotify.com/embed/album/6Arw1JDRnuohb4h9s3sazr" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <span class="anchor" id="disappear"></span>
+        <h3>Just disappear</h3>
+        <iframe src="https://open.spotify.com/embed/album/0nYJEIGo2s7e7JhoxareMM" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Shut Up</h3>
+        <iframe src="https://open.spotify.com/embed/album/0S6bJmNGg2Oz1c4l6nBSYv" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Are you happy?</h3>
+        <iframe src="https://open.spotify.com/embed/album/0JQX0S5gP9dwkMFtlpJENe" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Everybody is trash</h3>
+        <iframe src="https://open.spotify.com/embed/album/2tqk0XrrWUBmIs9E4dGLV3" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <span class="anchor" id="cheating"></span>
+        <h3>Cheating is a crime</h3>
+        <iframe src="https://open.spotify.com/embed/album/55a1smlZKNtPjQaMVzE4yJ" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <span class="anchor" id="toy"></span>
+        <h3>Toy</h3>
+        <iframe src="https://open.spotify.com/embed/album/7oaAflUeS3MnRhsFfmZ4ER" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>You can leave it as it is</h3>
+        <iframe src="https://open.spotify.com/embed/album/1TX4mKqiGZFxirRUL87AgM" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Please do not overdo</h3>
+        <iframe src="https://open.spotify.com/embed/album/7bAWkkcsDOJRKjPBpEhbDd" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>I don't want to believe the marriage of my favorite person</h3>
+        <iframe src="https://open.spotify.com/embed/album/0xMHiWEF87aaRoyO2uecjg" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Fell in love with two dimensions</h3>
+        <iframe src="https://open.spotify.com/embed/album/3VNuOjp1Vx4nS0f0Fq1kkE" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>I support you like a fall in love</h3>
+        <iframe src="https://open.spotify.com/embed/album/0MQiAT2HC3IYqjKIIaQeLs" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Thinking (EP)</h3>
+        <iframe src="https://open.spotify.com/embed/album/5CmlmG9z3u0H6aCmopEgRB" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Dont take away people you love (EP)</h3>
+        <iframe src="https://open.spotify.com/embed/album/4YdxwtUnTzJ0GDmVX5XBC5" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>Zenbukudaranee (EP)</h3>
+        <iframe src="https://open.spotify.com/embed/album/2ET6JF4bI6gPbKs9YlT3xn" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <br />
+        <h3>live for++ (EP)</h3>
+        <iframe src="https://open.spotify.com/embed/album/3U340TPKB4dcQQKpNodQeY" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <br style="clear:both;">
+
+      <!-- footer -->
+      <div style="margin-top:5%;z-index: 1;
+        position:relative;">
+        <!-- specialised footer -->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://open.spotify.com/artist/3sIalaTfShc1biZjHCCVkv">Kamiyama Yoh</a>
+            <br />
+            His music is more slow paced as compared to Takayan but his lyrics are similar in terms of tackling problems that are faced by teenagers.
+          </p>
+        </div>
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%; height:50%" src="../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../../Anime_Sites/Sakurasou/sakurasou.html">About</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/manga.html">Manga</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="takayan.html">About</a></li>
+                  <li><a href="#">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../TUYU/tuyu.html">About</a></li>
+                  <li><a href="../TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- loading screen -->
+    <div class="loader" id="loader">
+      <img src="../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- js -->
+    <script src="../../Javascript/loadingscreen.js"></script>
+    <script>
+      // smooth scrolling on anchor click
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault(); //cancels expected event if possible
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth' //smooth scrolling into view
+              });
+          });
+      });
+
+
+    </script>
+  </body>
+</html>

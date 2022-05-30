@@ -1,0 +1,19 @@
+
+/*Banner Image*/
+.toppity{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./KimiNoNaWa_Images2/kiminonawabg.webp);
+
+}
+
+/*Styling of table*/
+table{
+  border-collapse: collapse;
+  margin: auto;
+  border-width: 5px;
+}
+
+/*Spaces between the text and edge of box*/
+td{
+  padding: 10px;
+}

@@ -1,0 +1,151 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./KimiNoNaWa_Images2/knwbg.webp);
+  background-position:center; /*image is centered*/
+}
+
+
+/*banner*/
+/*Styling and placement of text*/
+
+h1{
+  /*padding to put it into the middle of div*/
+  padding-top:15vh;
+  padding-bottom:15vh;
+  margin:0;
+}
+
+.banner{
+  border-bottom:2px solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./KimiNoNaWa_Images2/kiminonawabg.webp);
+  background-size:cover; /*background image positioning */
+  background-position:center; /*background image positioning */
+}
+
+
+
+
+/*Sidebar*/
+/*!important tags are because some are interfered with other css files*/
+
+.sidenav a {
+  position: absolute; /*ignores other elements*/
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s !important; /* Add transition on hover */
+  padding: 15px; /*word in the middle */
+  width: 100px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white !important;
+  border-radius: 0 5px 5px 0;
+}
+
+/* left 0 makes it so that it sticks out */
+.sidenav a:hover {
+  left: 0;
+}
+
+#active{
+  left:0 ;
+}
+
+/*Text in sidenav*/
+/*top sets the top position */
+.about {
+  top: 9vh;
+  background-color: #555;
+}
+
+.char {
+  top: 16vh;
+  background-color: #555;
+}
+
+.easter {
+  top: 23vh;
+  background-color: #555;
+}
+
+.manga {
+  top: 30vh;
+  background-color: #555;
+}
+
+/*images */
+.mitsuha{
+  background-image:url(KimiNoNaWa_Images2/mitsu.webp);
+}
+
+.taki{
+  background-image:url(KimiNoNaWa_Images2/takitachibana.webp);
+
+}
+
+.tessie{
+  background-image:url(KimiNoNaWa_Images2/tessie.webp);
+}
+
+.miki {
+  background-image:url(KimiNoNaWa_Images2/mikionodera.webp);
+}
+
+.sayaka{
+  background-image:url(KimiNoNaWa_Images2/sayaka.webp);
+}
+
+.tsukasa{
+  background-image:url(KimiNoNaWa_Images2/tsukasa.webp);
+
+}
+
+.sidechar{
+  background-image: url(KimiNoNaWa_Images2/othercharsk.webp);
+}
+
+
+/*selection*/
+.content {
+  display: flex;
+  justify-content: space-between; /*aligns the flex container so thrs space between the divs*/
+  height:69vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url();
+}
+
+/*how much space it takes*/
+.content > div {
+  flex: 0 0 12%; /*length of the div*/
+  transition: flex-basis 0.3s 0.1s cubic-bezier(0.77, 0, 0.175, 1); /*transition */
+  /*image positioning */
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+}
+
+.content > div:hover {
+  flex: 0 0 24%; /*length increase on hover*/
+}
+
+
+.content a {
+  display:block; /*Can click the whole div the a is in to use link*/
+  width:100%; /*Can click the whole div the a is in to use link*/
+  height:100%; /*Can click the whole div the a is in to use link*/
+  text-decoration:none;
+  color:white;
+}
+
+/*to highlight the text*/
+.content span{
+  background-color: rgba(0,0,0,0.7);
+}
+
+/*Responsiveness*/
+@media screen and (max-device-width: 971px){
+  .content{
+    flex-direction:column; /*change from horizontal to veritcal*/
+    height:500vh; /*increases height so that its easier to see */
+  }
+
+}

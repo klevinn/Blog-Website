@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TUYU</title>
+    <!-- image for logo -->
+    <link rel="icon" href="../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="tuyugeneral.css">
+    <link rel="stylesheet" href="../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../../CSSfiles/loadingscreen.css">
+    <link rel="stylesheet" href="../../CSSfiles/sidebar.css">
+    <!-- fa icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../index.html" class="logo" id="bypass"><img src=../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- responsiveness -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!-- hamburger -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="navR" id="navbarR">
+          <!-- searchbar -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- searchbar links -->
+            <div id="select">
+              <p><a href="../../Anime_Sites/Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../../Anime_Sites/Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../../Anime_Sites/Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="tuyu.html">TUYU : About</a></p>
+              <p><a href="tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+          <li><a class="active" id="activeT" href="../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a href="../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1>TUYU</h1>
+      <h3>Scroll to read more</h3>
+    </div>
+
+    <!-- Content -->
+    <div class = music_info>
+      <!--sidebar -->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="#">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./tuyusongs.html">
+            <i class="fa fa-music fa-2x"></i>
+            <span class="nav-text">
+            Top / Recent Songs
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--Synopsis-->
+      <div class=synopsis>
+        <!-- back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+        <div class="fleft">
+          <h2 style="text-align:center;">About</h2>
+          <p>
+            TUYU (ツユ) is a musical unit consisting of guitarist, composer and lyricist Pusu (ぷす) and vocalist Rei (礼衣).
+            Other members include pianist miro, illustrator Omutatsu (おむたつ) and animator AzyuN. <br />
+            Formed : 12 June 2019, Japan <br />
+            Genre : Pop Rock , J-Pop <br />
+            <br />
+            TUYU's <a target="_blank" href="https://twitter.com/TUYU_official">Twitter</a> <br />
+            TUYU's <a target="_blank" href="https://www.youtube.com/c/EXSpins/featured">Youtube</a> <br />
+            TUYU's <a target="_blank" href="https://open.spotify.com/artist/7a94udgyLDoDX9G7XIWn5H?si=ePUL2usuRlyaQwFcF68aoA&dl_branch=1">Spotify</a>
+            <br /> <br />
+          <h2>More About Pusu</h2>
+          <p>
+            Gender : Male <br />
+            Birthday : May 23, 1994 (age 27) <br />
+            Pusu's <a target="_blank" href="https://twitter.com/Pusu_kun">Twitter</a>
+          </p>
+          <h2>History</h2>
+          <ul>
+            <li>In 2014, he started covering Japanese Songs. Just liek Takayan, he is an Utaite. At this time he was known as Zips and he started as a Vocaloid Artist</li>
+            <li>In 2015, he changed his name to Pusu and released a Uttatemita CD with other Utaite's at a Japanese Event Comiket 89</li>
+            <li>
+              In 2016-2018, he created a duet with another Utaite, Miyakawa-Kun. Being known as MiyaPusu, they featured on and released many songs. During this time period, Pusu also collaborated with Shakemii and Stungun, to form the collaboration,ShakePusuTan. They featured on many songs together.
+            </li>
+            <li>Pusu resigned from being a vocalist and vocaloid works. He then formed TUYU in 2019 along with Rei , miro, Omutatsu and AzyuN. TUYU is not a vocaloid band. Pusu is now the guitarist and producer of TUYU</li>
+          </ul>
+          <h2>Some of Pusu's Older Works(They are uploaded on the TUYU Channel, Alot of his much older works have been privated)</h2>
+          <ol>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=4K1-Th1aJzI&t=0s&ab_channel=%E3%83%84%E3%83%A6">ヘイセイカタクリズム (Heisei Cataclysm)</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=ugs4oVUNZ-o&ab_channel=%E3%83%84%E3%83%A6">アサガオの散る頃に (Asagao no Chiru Koro ni)</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=yGbjvme65Fg&ab_channel=%E3%83%84%E3%83%A6">レイワイテロリズム (Reiwai Terrorism)</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=F4JobhTBFCk&ab_channel=%E3%83%84%E3%83%A6">イザナミ討伐戦記 (Izanami Toubatsu Senki)</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=px6rXYFQBNk&ab_channel=%E3%83%84%E3%83%A6">ヘイセイサヨナラバイバイ (Heisei Sayonara Bye Bye)</a></li>
+          </ol>
+          <h2>About the other members</h2>
+          <ul class="members">
+            <li>Rei AKA Reikomoro : She has no social media presence but she is their vocalist. She is suspected to be the utaite <a target="_blank" href="https://utaitedb.net/Ar/23233">Aizawa</a> but there is no concrete evidence yet. </li>
+            <li>Miro : He is their pianist and he also has his own Youtube Channel <br /></li>
+            <li>He is also part of a Duo, <a target="_blank" href="https://www.youtube.com/channel/UCI9jpXc5nqzsZwVQpfWT13g">Osamiro</a> with Osamuraisan, a guitarist. However that channel has been inactive since TUYU started</li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCNXQ0bi7z7VjMt1AnR6H_Sw">Youtube</a></li>
+            <li><a target="_blank" href="https://twitter.com/mironuko">Twitter</a></li>
+            <li>Omotatsu AKA Kototatsu / Koto Tatsui : A manga artist that does illustrations and designs for TUYU</li>
+            <li><a target="_blank" href="https://twitter.com/kototatsu0402">First Twitter</a></li>
+            <li><a target="_blank" href="https://twitter.com/omrice4869">Second Twitter</a></li>
+            <li><a target="_blank" href="https://www.pixiv.net/en/users/1499614">Pixiv(A website to post art)</a></li>
+            <li><a target="_blank" href="https://omutatsu.work/">Website</a></li>
+            <li>Azyun : TUYU's illustrator and animator</li>
+            <li><a target="_blank" href="https://twitter.com/azyun_an?lang=en">Twitter</a></li>
+          </ul>
+        </div>
+
+        <!-- images -->
+        <div class="fright">
+          <img style=max-width:100%;  src="./tuyu_images/pic.webp" alt="TUYU Image"> <br />
+          <h4>This was Pusu's character back then, AKA Zips</h4>
+          <img style=max-width:100%;  src="./tuyu_images/zips.webp" alt="TUYU Image"> <br />
+          <h4>This is their illustrator, the manga Artist, Omotatsu</h4>
+          <img style=max-width:100%;  src="./tuyu_images/koto.webp" alt="Omotatsu Image"><br />
+          <h4>This is their pianist Miro, his character</h4>
+          <img style=max-width:100%;  src="./tuyu_images/miro.webp" alt="Miro Image"><br />
+          <h4>Lastly since Rei has little to no social media presence, this is AzyuN the designer & illustrator</h4>
+          <img style=max-width:100%;  src="./tuyu_images/download.webp" alt="Azyan Image"> <br />
+        </div>
+        <br style="clear:both;"><br />
+        <hr>
+
+        <!-- content -->
+        <div>
+          <h2>About their Music</h2>
+          <ul>
+            <li>TUYU's lyrics talk about the message of self hate and how they would want to disappear of the face of the earth.</li>
+            <li> They point towards the real life problems a lot of teens are facing. Such as depression due to comparison with others, stress from everything they do, overthinking and et cetera.</li>
+            <li>They talk about all the pain one is feeling and how people force themselves through the pain, through ignoring it or for other people.</li>
+            <li>Overall their songs are more about the pain people are facing, and their reactions / ways of dealing with it. For example, in the song "Being low as dirt, taking whats important from me", their way of ridding themself of the pain is through blaming and talking down about someone else </li>
+          </ul>
+          <p>
+            I believe these lyrics are bringing more awareness about what some people are facing and sometimes the pain eats at them continuously and can poison their mindset.
+          </p>
+          <hr>
+          <h2 style="text-align:center;">Their Youtube Content</h2>
+          <p> Their youtube channel only posts the music videos of the songs they produced</p>
+          <ol>
+            <li>
+              TUYU Channel First Video (It actually is Pusu's work not TUYU's but it was uploaded onto the TUYU Channel) <br />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4K1-Th1aJzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+              TUYU Channel Most Recent Video <br />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/G5HKY-vM_6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+              TUYU Channel most viewed video (One of their top songs) <br />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/olWvy0PiLfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+          </ol>
+        </div>
+        <hr>
+        <div>
+          <h2 style="text-align:center;">Personal Opinions of TUYU</h2>
+          <p>I highly recommend them. The message their music is trying to put across, which im assuming is to find ways to help those people suffering right now is very well portrayed. It might not be releateable to everyone but its still worth the listen. Putting aside the message, the beat / instrumental itself is extremely upbeat and some are extremely catchy. This makes the music extremely enjoyable for everyone. They may be a 'new' band but i believe they are doing extremely well are able to appeal to their audience</p>
+          <br />
+          <p>
+            My favourite song of theirs currently is Being low as dirt, taking what's important from me. I especially like the opening of it.
+            <iframe src="https://open.spotify.com/embed/track/1LNGuCg01CHg9ErApmz92R" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </p>
+        </div>
+      </div>
+
+      <!--footer-->
+      <div style="margin-top:5%; z-index: 1;
+        position:relative;">
+        <!-- specialised footer -->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://open.spotify.com/artist/4UK2Lzi6fBfUi9rpDt6cik?si=1riv837eQ9uGsn9M_LoUMA&dl_branch=1">Yorushika</a>
+            <br />
+            I feel like they would be a good band to listen to if you like TUYU. No specific reason, its more of a similar feel to both.
+          </p>
+        </div>
+        <!-- standardised footer -->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%; height:50%" src="../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../../Anime_Sites/Sakurasou/sakurasou.html">About</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/manga.html">Manga</a></li>
+                  <li><a href="../../Anime_Sites/Sakurasou/easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                  <li><a href="../../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- loading screen -->
+    <div class="loader" id="loader">
+      <img src="../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- js -->
+    <script src="../../Javascript/loadingscreen.js"></script>
+    <script ></script>
+  </body>
+</html>

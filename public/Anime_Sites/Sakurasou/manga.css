@@ -1,0 +1,57 @@
+
+
+/*Banner*/
+
+.toppity{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./sakurasou_images2/sakurasoubannerbg.webp);
+
+}
+
+
+/*Main Content Box */
+/*img styling */
+.inform img{
+  border:1px solid black;
+  border-radius:15px;
+  height:100%;
+  width:100%;
+}
+
+/*My own version of tooltips*/
+.extra{
+  display:none;
+}
+
+/*on hover == visible */
+i:hover .extra{
+  display: inline-block;
+  background-color: white;
+  color:black;
+}
+
+
+/*styling of divs*/
+/*float is the direction i push it to*/
+.fleft{
+  float:left;
+  width:80%;
+}
+
+
+.fright{
+  float:right;
+  width:20%;
+  height:100%;
+}
+
+
+/*responsiveness, makes it fit to phone screen *.
+@media(max-width:480px){
+  .fright{
+    width:100%;
+  }
+  .fleft{
+    width:100%;
+  }
+}

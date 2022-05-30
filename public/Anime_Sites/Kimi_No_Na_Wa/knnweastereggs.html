@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easter Eggs!</title>
+    <!--Link to logo-->
+    <link rel="icon" href="../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="eggs.css">
+    <link rel="stylesheet" href="knnwgeneral.css">
+    <link rel="stylesheet" href="../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../../CSSfiles/sidebar.css">
+    <link rel="stylesheet" href="../../CSSfiles/loadingscreen.css">
+    <!-- fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+      /*abit of space below the list item */
+      li:not(:last-child) {
+        margin-bottom: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../index.html" class="logo" id="bypass"><img src=../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!--Responsiveness-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!--Hamburger-->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- navbar links -->
+        <ul class="navR" id="navbarR">
+          <!--Search bar-->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- Link select -->
+            <div id="select">
+              <p><a href="../Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1>Easter Eggs of <i>Kimi No Na Wa</i></h1>
+      <h3>Scroll to read more</h3>
+    </div>
+    <!-- Content -->
+    <div class = animeK_info>
+      <!--sidebar -->
+      <!--Referenced from https://codepen.io/JFarrow/pen/fFrpg?editors=1100, changed to fit my website -->
+      <!-- Cleaned up code -->
+      <!--all fa-[text] tags are icons-->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="./kiminonawwa.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./knnwchars.html">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <span class="nav-text">
+            Characters
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./knnweastereggs.html">
+            <i class="fa fa-etsy fa-2x"></i>
+            <span class="nav-text">
+            Easter Eggs
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./knwmanga.html">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text">
+            Manga / LN
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--content-->
+      <div class=inform>
+        <!--back to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <!--Content-->
+        <h2 style="text-align:center; ">Easter Eggs</h2>
+        <h3>These References/Easter Eggs are found throughout the whole Anime</h3>
+        <ul>
+          <li style="list-style-type:none;">
+            <h3>References to Garden Of Words (Makoto Shinkai's previous Movie)</h3>
+            <ol>
+              <li>
+                The Main Protagonist of Garden Of Words has made a cameo inside the movie as a Teacher <br />
+                Left is the character from Garden Of Words, while right is the teacher from Kimi No Na Wa. Splitting Image dont you think?<br />
+                &nbsp; <br />
+                <img src="./KimiNoNaWa_Images2/Yukari_Yukino.webp" class="twobyfour" alt="Easter Egg Images">
+                <img src="./KimiNoNaWa_Images2/Yuki-chan_sensei.webp" class="twobyfour" alt="Easter Egg Images">
+              </li>
+
+              <li>
+                The name of the restaurant that Taki was working at when translated is actually The Garden Of Words, a direct reference towards Makoto Shinkai's Previous Movie <br />
+                The name was: Il Giardino Delle Parole when translated becomes the Garden of Words.
+                <img src="./KimiNoNaWa_Images2/garden_of_words.webp" class="twobyfour" alt="Easter Egg Images"> <br />
+                The background image is from the Anime itself, it looks so realistic! <br />
+                &nbsp; <br />
+                A smaller easter egg, the Cafe that Taki and his friends visited is also called Leaves Of Words, which shows a small relation to the Garden Of Words. <br />
+                <img src="./KimiNoNaWa_Images2/Leaves_of_Words.webp" class="twobyfour" alt="Easter Egg Images">
+              </li>
+
+            </ol>
+          </li>
+
+          <li style="list-style-type:none;">
+            <h3>References to Z-Kai which was in Cross Roads another one of Makoto Shinkai's previous movies.</h3>
+            <ol>
+              <li>
+                It may be hard to see but here are the scenes in which Z-Kai can be screen <br />
+                &nbsp; <br />
+                <img class="zimagel" src="./KimiNoNaWa_Images2/Z-Kai_2.webp" height=200 alt="Easter Egg Images"> <br />
+                <img class="zimager" src="./KimiNoNaWa_Images2/Z-Kai_zoom.webp" alt="Easter Egg Images"> <br style="clear:both;">
+                <img class="zimagel" src="./KimiNoNaWa_Images2/Z-Kai_1.webp" alt="Easter Egg Images">
+                <img class="zimager" src="./KimiNoNaWa_Images2/z-kai_zoom1.webp" alt="Easter Egg Images"> <br style="clear:both;">
+                <img class="zimagel" src="./KimiNoNaWa_Images2/Z-Kai_3.webp" alt="Easter Egg Images">
+                <img style="float:right; width:50%; height:230px;" src="./KimiNoNaWa_Images2/zkaizoom2.webp" alt="Easter Egg Images"><br style="clear:both;">
+              </li>
+
+            </ol>
+          </li>
+
+          <li style="list-style-type:none;">
+            <h3>Reference to Hyouka</h3>
+            <br />
+            The map used to depict real life locations in Hyouka was used in Kimi No Na Wa.
+            This one might be a stretch but there is still a noticeable similarity between the maps.
+            <br />
+            &nbsp;<br />
+            <ol>
+              <li>
+                <img class="zimagel" src="./KimiNoNaWa_Images2/Hyouka_real-life_map.webp" height=200 alt="Easter Egg Images">
+                <img class="zimager" src="./KimiNoNaWa_Images2/Gifu_Map.webp" height="200" alt="Easter Egg Images">
+                <br style="clear:both;">
+              </li>
+
+            </ol>
+          </li>
+
+          <li style="list-style-type:none;">
+            <h3>References to Jojo's Bizarre Adventure</h3>
+            <ol>
+              <li>
+                In the ending scene of Kimi No Na Wa, there is a similar line used in Jojo's Bizarre Adventure. It probably has also been used by many other animes, but this is the one i found the earliest so i will be using it!
+                <img class="zimagel" src="./KimiNoNaWa_Images2/jojo.webp" height="200" alt="Easter Egg Images">
+                <img class="zimager" src="./KimiNoNaWa_Images2/endingscene.webp" height="200" alt="Easter Egg Images">
+                <br style="clear:both;">
+              </li>
+
+            </ol>
+          </li>
+
+          <li style="list-style-type:none;">
+            <h3>References to the Author</h3>
+            <ol>
+              <li>
+                There was a scene in Taki's room, where a mug with the author, Makoto Shinkai's avatar can be seen on it.
+                <img src="./KimiNoNaWa_Images2/mug.webp" class="twobyfour" alt="Easter Egg Images">
+              </li>
+
+            </ol>
+          </li>
+        </ul>
+
+      </div>
+      <!--Footer-->
+      <div style="margin-top:5%;position:relative;
+        z-index:1;">
+        <!--Specified Box-->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://myanimelist.net/anime/28851/Koe_no_Katachi">A Silent Voice</a> <br />
+            Its a Romantic Drama Movie that i highly recommend. It is able to trigger many emotions in me and also is able to show the problems the characters are tackling in depth
+          </p>
+          <p class="disclaimer">
+            Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers
+          </p>
+        </div>
+        <!--standardised footer (referenced) -->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%; height:50%" src="../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../Sakurasou/sakurasou.html">About</a></li>
+                  <li><a href="../Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../Sakurasou/manga.html">Manga</a></li>
+                  <li><a href="../Sakurasou/easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="kiminonawwa.html">About</a></li>
+                  <li><a href="knnwchars.html">Characters</a></li>
+                  <li><a href="knwmanga.html">Manga</a></li>
+                  <li><a href="#">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                  <li><a href="../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Screen-->
+    <div class="loader" id="loader">
+      <img src="../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- javascript -->
+    <script src="../../Javascript/loadingscreen.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Characters</title>
+    <!-- image for logo -->
+    <link rel="icon" href="../../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="char.css">
+    <link rel="stylesheet" href="../../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/sidebar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../sakurasougeneral.css">
+    <link rel="stylesheet" href="../../../CSSfiles/loadingscreen.css">
+    <!-- link for fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../../index.html" class="logo" id="bypass"><img src=../../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- responsiveness (mobile) -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!-- hamburger -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- navbar links -->
+        <ul class="navR" id="navbarR">
+          <!-- search bar and the links -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- search links -->
+            <div id="select">
+              <p><a href="../sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="jin.html">Sakurasou: Jin</a></p>
+              <p><a href="misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../../Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1><i>Shiina Mashiro</i></h1>
+      <h3>Scroll to read more</h3>
+    </div>
+
+    <!-- Content -->
+    <div class = anime_info>
+      <!--sidebar -->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="../sakurasou.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../sakurasoumainchar.html">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <span class="nav-text">
+            Characters
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../easteregg.html">
+            <i class="fa fa-etsy fa-2x"></i>
+            <span class="nav-text">
+            Easter Eggs
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../manga.html">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text">
+            Manga / LN
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--content-->
+      <div class = "inform">
+        <!-- redirect same page -->
+        <!-- back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <nav class="redirect">
+          <a style="width:33%" href="#about">About</a>
+          <a style="width:33%" href="#Relationships">Relationships</a>
+          <a style="width:33%" href="#facts">Fun Facts</a>
+          <br style="clear:both;">
+        </nav>
+
+        <!-- content -->
+        <div class="fleft">
+          <h2 style="text-align:center;">About Shiina Mashiro</h2>
+          <p>
+            Appearance : Mashiro is a very pretty girl. She has long blonde hair that reaches her waist accompanied with big red eyes. She has a slim physique and pale skin.<br />
+            &nbsp; <br />
+            Japanese Name : 椎名 ましろ<br />
+            &nbsp; <br />
+            Gender : Female <br />
+            &nbsp; <br />
+            Birthday : June 13th<br />
+            &nbsp; <br />
+            Zodiac : Gemini<br />
+            &nbsp; <br />
+            Occupation : Artist / Manga Author<br />
+            &nbsp; <br />
+          </p>
+          <table border="1">
+            <tr>
+              <td>Japanese VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/10765/Ai_Kayano">Ai Kayano</a></td>
+            </tr>
+            <tr>
+              <td>English VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/14865/Soyeon">Soyeon</a></td>
+            </tr>
+            <tr>
+              <td>Korean VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/19293/Caitlynn_French">Caitlynn French</a></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- interactiveness -->
+        <div class="fright">
+          <audio id="audio" src="./charsounds/shiina.mp3"></audio>
+          <a href="#" id="play">
+          <img class="first" src="./charimages2/shiina1.webp" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Character Logo">
+          </a>
+          <h4 style="text-align:center">Hover to see her diiferent looks!</h4>
+          <h4 style="text-align:center">Click to hear voicelines!</h4>
+        </div>
+        <br style="clear:both;">
+
+        <!-- id for redirect -->
+        <hr id="about" >
+        <p>
+          About: <br />She is the female protagonist of the anime. She is a world famous artist who transferred into Suimei University Of Arts to pursue her dream of drawing manga. She is extremely reliant on others, explaining why Sorata is her caretaker. She lacks basic common sense and fails to do a lot of normal daily activities. She is also not very academically smart as she gets bad grades, however due to her sheer talent in art, she can memorise the answers of past year papers quickly and easily and gets perfect grades in her make-up exams.<br />
+          &nbsp;<br />
+          Personality : <br />She displays characteristics that lead us to believe she is somewhere on the autism spectrum. She is extremely good at art but is extremely terrible at everything else due to lacking any common sense. She displays close to no emotions, always wearing a blank face. She has a soft voice and speaks in a dull manner. It is said she does not know what to think 90% of the time which explains her speaking very less as she does not know wwhat to say. <br />
+          &nbsp; <br />
+          Mashiro lives in her own world, she does things unconventionally and follow different practices as compared to others. She is also idealistic and cares very little about fame or esteem, causing her to leave her career as a popular artist to become a mangaka(manga author). She is considered a hard worker but she is the type to work for days/ without sleep. Lastly she is motivated by food and often acts on emotion. <br />
+        </p>
+        <br />
+
+        <!-- id for redirect -->
+        <hr id="Relationships" >
+        <h2 style="text-align:center;">Relationships</h2>
+        <h2>Family</h2>
+        <p>
+          Mother: Unnamed<br />
+          Father: Unnamed <br />
+          Aunt : <a href="others/others.html#chihiro">Chihiro Sengoku</a><br />
+          &nbsp;<br />
+        </p>
+        <h2>Friends</h2>
+        <p>
+          <a href="sorata.html">Sorata Kanda</a> <br />
+          &nbsp; <br />
+          Shiina has a close bond with Sorata. Sorata was Shiina's first male friend. Sorata is one of the few people that can make Shiina's blank expression into a smiling one. Despite Sorata being frustrated at Shiina due to her incompetence, he still takes care of her(mentioned at <a href="sorata.html#Relationships">Sorata's</a> Page). Shiina also develops feelings for Sorata later on. <br />
+          &nbsp; <br />
+          <a href="others/others.html#yuuko">Yuuko Kanda</a> <br />
+          &nbsp; <br />
+          Shiina and Yuuko are competing for Sorata. Shiina even came up with a plan to get rid of Yuuko, however her plan was never put into action. The infamous Plan C. <br />
+          &nbsp; <br />
+          <a href="others/others.html#ayano">Ayano Iida</a> <br />
+          &nbsp; <br />
+          Ayano is her manga editor. Shiina obeys everything she asks her to do but she also often goes to her to ask for help for both her manga and her life. <br />
+          &nbsp; <br />
+          <a href="others/others.html#chihiro">Chihiro Sengoku</a> <br />
+          &nbsp; <br />
+          She is Shiina's aunt, but all of Chihiro's duties of Shiina were passed to Sorata. So they haven't got any chance to bond, so not much is known about their relationship. <br />
+          &nbsp; <br />
+          <a href="others/others.html#rita">Rita</a> <br />
+          &nbsp; <br />
+          She was Shiina's caretaker before Sorata. Rita was jealous of Shiina's art talent, so she taught Shiina how to use a computer to make manga. Her intention was to send Shiina to Japan so that she could experience failure and understand how other people felt especially after seeing Shiina's art pieces. However they did manage to reconcile later in the Anime. <br />
+          &nbsp; <br />
+          <a href="aoyama.html">Aoyame Nanami</a> <br />
+          &nbsp; <br />
+          She is Shiina's close friend. She also occasionaly helps take care of Shiina, especially for matters such as putting on clothes et cetera. Shiina gets jealous of Aoyama and Sorata's close friendship, thinking that Sorata's actions are romantic moves to hit on her. <br />
+          &nbsp; <br />
+          <a href="misaki.html">Misaki Kamiigusa</a> <br />
+          &nbsp; <br />
+          Misaki, Shiina's clsoe friend, calls Mashiro, Mashiron. In terms of drawing, they are equal except the fact Misaki draws anime while Mashiro draws manga. Mashiro sees Misaki as the same as everyone else, ignoring her ability/fame in her anime, which causes Misaki to like Mashiro, more specifically her eyes. <br />
+          &nbsp; <br />
+        </p>
+        <br />
+
+        <!-- id for redirect -->
+        <hr  id="facts">
+        <h2 style="text-align:center">Fun Facts!</h2>
+        <p>
+          The name Mashiro means "Broad-minded" or "Pure White", relating to her pale skin.
+          Mashiro's surname Shina means "Virtue, Good".
+        </p>
+      </div>
+
+      <!-- footer -->
+      <div style="margin-top:5%;z-index: 1;
+        position:relative;">
+        <!-- specialised box on footer -->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://myanimelist.net/anime/4224/Toradora">Toradora</a><br />
+            Its made by the same studio and also it is another romantic comedy that i highly recommend to others. Look at this site to find out more
+          </p>
+          <p class="disclaimer">
+            Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers.
+          </p>
+        </div>
+
+        <!-- standardised footer (referenced) -->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="height:50%; width:50%" src="../../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../sakurasou.html">About</a></li>
+                  <li><a href="../sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../manga.html">Manga</a></li>
+                  <li><a href="../easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../../Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                  <li><a href="../../Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                  <li><a href="../../Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                  <li><a href="../../Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                  <li><a href="../../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- loading screen -->
+    <div class="loader" id="loader">
+      <img src="../../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- java script -->
+    <script src="../../../Javascript/loadingscreen.js" ></script>
+    <script>
+
+      //summarised description
+      //audio play on click
+      document.getElementById('play').addEventListener('click', function (e) {
+        e.preventDefault(); //prevents default event
+        document.getElementById('audio').play(); //plays audio on click
+      });
+
+      //image change on hover and unhover
+      function hover(element) {
+        element.setAttribute('src', './charimages2/shiina2.webp');
+        element.setAttribute('width', '95%');
+        element.setAttribute('height', '95%');
+      };
+
+      function unhover(element) {
+        element.setAttribute('src', './charimages2/shiina1.webp');
+      };
+
+      //smooth scrolling on anchor click
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+      });
+    </script>
+  </body>
+</html>

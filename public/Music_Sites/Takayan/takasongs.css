@@ -1,0 +1,41 @@
+
+
+/*space for anchor tag to travel to */
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+/*iframe div*/
+#music {
+  width:48% ; /*takes up half the page*/
+  float:left;
+  margin:30px 0 0 20px; /*not directly touching the edges */
+  z-index:2; /*can cover sidebar */
+  position:relative;
+}
+
+#musicr {
+  width:48% ; /*takes up half the page*/
+  float:right;
+  margin:30px 20px 0 0; /*not directly touching the edges */
+  z-index:2; /*can cover sidebar */
+  position:relative;
+}
+
+/*responsiveness */
+@media screen and (max-device-width: 850px) {
+
+  #music{
+    width:100%; /*full width*/
+    margin:0; /*full width*/
+  }
+
+  #musicr{
+    margin:0; /*full width*/
+    width:100%; /*full width*/
+  }
+
+}

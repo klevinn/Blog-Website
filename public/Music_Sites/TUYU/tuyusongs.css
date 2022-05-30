@@ -1,0 +1,38 @@
+/*empty space for anchor tag to direct to*/
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+
+#music {
+  width:48% ; /*takes up half the screen*/
+  float:left;
+  margin:30px 0 0 20px; /*doesnt touch the edges of screen*/
+  z-index:2;
+  position:relative;
+}
+
+#musicr {
+  width:48% ; /*takes up half the screen*/
+  float:right;
+  margin:30px 20px 0 0; /*doesnt touch the edges of screen*/
+  z-index:2;
+  position:relative;
+}
+
+@media screen and (max-device-width: 850px) {
+
+  #music{
+    width:100%; /*full width*/
+    margin:0;
+  }
+
+  #musicr{
+    margin:0;
+    width:100%; /*full width*/
+  }
+
+}

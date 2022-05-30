@@ -1,0 +1,172 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./sakurasou_images2/contentbackground.webp);
+  background-position:center; /*bg positioning */
+}
+
+
+/*Banner*/
+.toppity{
+  border-style:solid;
+  border-width:0.5px;
+  border-bottom-color:white;
+  height:100vh;
+  /*bg styling */
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  position:relative;
+  z-index:1; /*to hide sidebar */
+
+}
+
+.toppity h1{
+  text-align:center;
+  color:white;
+  font-size: 4em;
+  margin:50vh 50vh 0 50vh; /*centers it*/
+}
+
+.toppity h3{
+  text-align:center;
+  color:white;
+  margin:0 50vh 50vh 50vh;
+}
+
+.anime_info{
+  height:100vh; /*takes up whole screen */
+}
+
+
+/*content*/
+.inform{
+  margin: 56px 250px; /*middle of screen */
+  border: 1px solid white ;
+  /*bg styling */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+  z-index: 1;
+  color:white;
+
+
+}
+.inform p{
+  font-size:1.25em;
+}
+
+/*footer image & stlying */
+#footer2{
+  font-size:1.3em;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)) , url(./sakurasou_images2/toradora.webp);
+}
+
+/*link color */
+a {
+  color:#00FFFF;
+}
+
+/*centering */
+iframe {
+  display:block;
+  margin:auto;
+}
+
+video{
+  display:block;
+  margin:auto;
+}
+
+/*Responsiveness*/
+/*fit to screen once a certain width*/
+
+@media(max-width:660px){
+  video{
+    width:100vw; /*span from onee side to ther other */
+  }
+  td{
+    padding:0;
+  }
+  iframe{
+    width:100vw; /*span from onee side to ther other */
+  }
+
+  .toppity h3{
+    margin:0;
+  }
+}
+
+@media screen and (max-width:845px){
+  /*.inform{
+    font-size:2em;
+  }*/
+  /*.footer{
+    font-size:2em;
+  }*/
+
+  iframe{
+    margin:0; /*allows it to touch the edges of the screen */
+  }
+
+  video{
+    margin:0;
+  }
+}
+@media screen and (max-width:370px){
+  /*.anime_info{
+    font-size:2.5em;
+  }*/
+  table{
+    font-size:0.75em;
+  }
+
+}
+
+
+@media only screen and (max-width: 1255px){
+  /* wwidth of 100% to fit screen */
+  body{
+    width:100%;
+  }
+  .toppity{
+    width:100vw;
+    background-position: center;
+    background-size:cover;
+    height:50vh; /*makes it into a banner */
+  }
+  .toppity h1{
+    margin:10vh 0 0 0;
+  }
+  .sidenav a{
+    display:none; /*gets rid of sidebar */
+
+  }
+  .anime_info{
+    width:100vw; /*one side to the other of the screen */
+  }
+
+  #active{
+    border:3px solid white;
+  }
+
+  .inform{
+    width:100%; /*one side to the other of the screen */
+    margin:0;
+    display:inline-block;
+    background-color: black;
+  }
+
+}
+
+
+/*because of bootstrap*/
+@media screen and (max-device-width: 523px){
+  .lol{
+    display:block !important;
+    background-color:rgba(0,0,0,0) !important;
+    width:90% !important;
+  }
+  .lol li{
+    margin:0 !important;
+  }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kimi No Na Wa</title>
+    <!-- Link to logo -->
+    <link rel="icon" href="../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="kiminonawa.css">
+    <link rel="stylesheet" href="knnwgeneral.css">
+    <link rel="stylesheet" href="../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../../CSSfiles/sidebar.css">
+    <link rel="stylesheet" href="../../CSSfiles/loadingscreen.css">
+    <!-- fa icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../index.html" class="logo" id="bypass"><img src=../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!--Responsiveness-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!--Hamburger-->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="navR" id="navbarR">
+          <!--Searchbar-->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!--Links that can appear in searchbar-->
+            <div id="select">
+              <p><a href="../Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class=toppity>
+      <h1>Kimi No Na Wa</h1>
+      <h3>Scroll to read more</h3>
+    </div>
+    <!-- Content -->
+    <div class = animeK_info>
+      <!--sidebar -->
+      <!--Referenced from https://codepen.io/JFarrow/pen/fFrpg?editors=1100, changed to fit my website -->
+      <!-- Cleaned up code -->
+      <!--all fa-[text] tags are icons-->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="./kiminonawwa.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./knnwchars.html">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <span class="nav-text">
+            Characters
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./knnweastereggs.html">
+            <i class="fa fa-etsy fa-2x"></i>
+            <span class="nav-text">
+            Easter Eggs
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./knwmanga.html">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text">
+            Manga / LN
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Synopsis-->
+      <div class=inform>
+        <!--Back to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <h2 style="text-align:center;">Trailer</h2>
+        <!--Iframed youtube video-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0T6PBmyExMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+
+        <!--Content-->
+        <h2 style="text-align:center;">Info About Anime</h2>
+        <p>
+          Also known as :
+          君の名は , Your Name <br />
+          Genre : Romance , Drama , Supernatural <br />
+          1 Episode (Its a Movie that is 1hr 46min long ) <br />
+          Studio : <a target="_blank" href="https://www.cwfilms.jp/">CoMiX Wave Films </a> <br />
+          Aired on Aug 26, 2016
+        </p>
+        <h2 style="text-align:center;">Production Staff</h2>
+        <p>
+          Director : Makoto Shinkai  <br />
+          Writer : Makoto Shinkai <br />
+          Producer : Genki Kawamura , Katsuhiro Takei , Kōichirō Itō <br />
+          Distributor	: Toho , Funimation <br />
+        </p>
+        <hr>
+        <h2 style="text-align:center;">Synopsis</h2>
+        <p>
+          Mitsuha Miyamizu, a high school girl that lives in the countryside, yearns to live in the bustling city of Tokyo. Meanwhile in the city, Taki Tachibana lives a busy life as a male high school student while juggling his part-time job, studies and hopes for a future in architecture. <br />
+          One day, Mitsuha awakens in a room that is not her own and suddenly finds herself living the dream life in Tokyo but in Taki's body! Elsewhere, Taki finds himself living Mitsuha's life in the humble countryside. They then realise that they switch bodies randomly when they sleep and wake up. <br />
+          Kimi no Na wa. revolves around Mitsuha and Taki's actions, which begin to have a dramatic impact on each other's lives, weaving them into a fabric held together by fate and circumstance.
+        </p>
+        <h2 style="text-align:center;">More about the story</h2>
+        <p>
+          It may seem like a weird fictional story at first but throughout the movie, there are many scenes that are able to tug at the viewer's heartstrings. The movie itself is full of many comedic and interesting scenes while also being able to tackle the emotional problems the characters were facing. The movie also had a beautiful ending that really was able to wrap the whole movie together.
+        </p>
+
+        <hr>
+        <h2 style="text-align:center;">Music Used!(With links!)</h2>
+        <h3>Main Songs in Kimi No Na Wa</h3>
+        <ul>
+          <li>Yumetoro (夢灯籠 , Dream Lantern)</li>
+          <li>Zenzenzense (前前前世 , Past Past Past life)</li>
+          <li>Sparkle (Suparaku , スパークル)</li>
+          <li>Nandemonaiya (It's Nothing , なんでもないや)</li>
+        </ul>
+        <p>There are many songs shown in the show. They are all by RadWimps. Here is the album</p>
+        <iframe style="margin:0;" src="https://open.spotify.com/embed/album/4qApTp9557qYZzRLEih4uP" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <hr>
+
+        <h2 style="text-align:center;">Personal Opinion</h2>
+        <p>
+          This movie is worth the watch. It is one of if not my favourite Japanese movies I have watched. Like previously mentioned, this movie was able to pull at my heart strings. In my opinion, it had the perfect portrayal of the theme of distant romance and loss. The ending also did leave me wanting more , though I was disappointed to find out that there was no story afterwards published. Lastly they had the perfect use of music to trigger many emotions at many times.
+          I have comments on the music as well, majority of it are instrumentals which is not really my forte, but about the few songs that actually involve singing , personally I would recommend listening to them as they are very good songs.
+        </p>
+
+        <table border="1">
+          <tr>
+            <td colspan="5">Ratings(Biased because this is one of my favourites)</td>
+          </tr>
+          <tr>
+            <td>Character</td>
+            <td>Story</td>
+            <td>Art</td>
+            <td>Music/Sound</td>
+            <td>Enjoyment</td>
+          </tr>
+          <tr>
+            <td>10/10</td>
+            <td>10/10</td>
+            <td>10/10</td>
+            <td>10/10</td>
+            <td>10/10</td>
+          </tr>
+        </table>
+        <hr>
+
+        <h2 style="text-align:center">One of my favourite clips</h2>
+        <video src="./Knnwvideos/takitachi.mp4" controls></video>
+        <p>Recorded and cut by Calvin on <a target="_blank" href="https://9anime.to/">9Anime</a></p>
+      </div>
+
+      <!--Footer-->
+      <div style="margin-top:5%;position:relative;
+        z-index:1;">
+        <!--Specialised box for pages-->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://myanimelist.net/anime/28851/Koe_no_Katachi">A Silent Voice</a> <br />
+            Its a Romantic Drama Movie that i highly recommend. It is able to trigger many emotions in me and also is able to show the problems the characters are tackling in depth
+          </p>
+          <p class="disclaimer">
+            Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers
+          </p>
+        </div>
+        <!--standardised footer (referenced)-->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%; height:50%" src="../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../Sakurasou/sakurasou.html">About</a></li>
+                  <li><a href="../Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../Sakurasou/manga.html">Manga</a></li>
+                  <li><a href="../Sakurasou/easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="knnwchars.html">Characters</a></li>
+                  <li><a href="knwmanga.html">Manga</a></li>
+                  <li><a href="knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                  <li><a href="../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Loading screen-->
+    <div class="loader" id="loader">
+      <img src="../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+    
+    <!--Javascript-->
+    <script src="../../Javascript/loadingscreen.js"></script>
+    <script></script>
+  </body>
+</html>

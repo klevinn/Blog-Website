@@ -1,0 +1,187 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./tuyu_images/bg.webp);
+  background-position:center;
+}
+
+
+/*Top Part*/
+.toppity{
+  border-style:solid;
+  border-width:0.5px;
+  border-bottom-color:white;
+  height:100vh; /*full height */
+  /*bg styling */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./tuyu_images/maxresdefault.webp);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  position:relative;
+  z-index:1;
+}
+
+.toppity h1{
+  text-align:center;
+  color:white;
+  font-size: 4em;
+  margin:50vh 50vh 0 50vh; /*centering */
+}
+
+.toppity h3{
+  text-align:center;
+  color:white;
+  margin:0 50vh 50vh 50vh; /*centering */
+}
+
+.music_info{
+  height:100vh; /*full height */
+}
+
+/*Main Content Box */
+.synopsis{
+  margin: 56px 250px; /*centering */
+  border: 1px solid white ;
+  /*bg image */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.80));
+  color: #f2f2f2 ;
+
+
+}
+.synopsis p{
+  font-size:1.25em;
+
+
+}
+.synopsis ul{
+  font-size:1.25em;
+
+}
+.synopsis ol{
+  font-size:1.25em;
+
+}
+
+.members li{
+  margin-bottom:3%;
+}
+
+/*content alignment*/
+.fleft{
+  float:left;
+  width:75%;
+}
+
+.fright{
+  float:right;
+  height:100% ;
+  width:25% ;
+  overflow:scroll;
+}
+
+
+a{
+  color:cyan;
+}
+
+/*footer styling */
+#footer2{
+  font-size:1.3em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)) , url(./tuyu_images/yorushika.webp);
+  background-size:contain;
+  background-position: center;
+}
+
+
+
+/*Responsiveness*/
+/*makes divs full width*/
+
+@media(max-width:905px){
+  .fleft{
+    width:100%;
+  }
+
+  .fright{
+    width:100%;
+  }
+}
+
+@media(max-width:660px){
+
+  iframe{
+    width:100%;
+  }
+
+  .toppity h3{
+    margin:0;
+  }
+}
+
+@media screen and (max-width:845px){
+  /*.synopsis{
+    font-size:2em;
+  }
+  .footer{
+    font-size:2em;
+  }*/
+  iframe{
+    margin:0;
+  }
+}
+@media screen and (max-width:370px){
+  /*.music_info{
+    font-size:2.5em;
+  }*/
+  table{
+    font-size:0.75em;
+  }
+
+}
+
+
+@media only screen and (max-width: 1255px){
+  body{
+    width:100%;
+  }
+  .toppity{
+    width:100vw;
+    background-position: center;
+    background-size:cover;
+    height:50vh;
+  }
+  .toppity h1{
+    margin:10vh 0 0 0;
+  }
+
+  .music_info{
+    width:100vw;
+  }
+
+  #active{
+    border:3px solid white;
+  }
+
+  nav{
+    display:none; /*hides sidebar */
+  }
+
+  .synopsis{
+    width:100vw;
+    margin:0;
+    display:inline-block;
+  }
+}
+
+
+/*because of bootstrap*/
+@media screen and (max-device-width: 523px){
+  .lol{
+    display:block !important;
+    background-color:rgba(0,0,0,0) !important;
+    width:90% !important;
+  }
+  .lol li{
+    margin:0 !important;
+  }
+}

@@ -1,0 +1,124 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../KimiNoNaWa_Images2/knwbg.webp);
+  background-position:center; /* So that the image is centered */
+}
+
+
+/*Banner Image*/
+.toppity{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../KimiNoNaWa_Images2/kiminonawabg.webp);
+}
+
+/*Same Page Re-Direct Nav*/
+.redirect {
+  text-align:center;
+  background-color:rgba(0,0,0,0.57);
+  display: flex; /* Horizontal Display in the div */
+}
+
+/*Make the link look nicer*/
+.redirect a{
+  border: 1px solid white;
+  display:block; /*So that u dont need to click exactly on the word to use link*/
+  padding:10px; /* Text does not touch the edges of the box */
+  color:white;
+  text-decoration:none; /* anchor tags have no undeerscore */
+}
+
+
+
+
+/*Main Content Box */
+
+/*Accordian*/
+/*Similar CSS to w3schools, with minor changes*/
+
+.content{
+  background-color: rgba(0,0,0,0.55);
+  max-height: 0; /*Hide everything (uses Javascript later on to increase max-height to see content)*/
+  overflow:hidden; /*Anything out of the content div won't be seen */
+  padding: 0 18px; /*Better look overall */
+  transition: max-height 0.2s ease-out; /*For sliding effect of accordian*/
+}
+
+.collapsible {
+  /*For overall look of the button that can be used as accordian*/
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  padding: 18px; /*Words dont touch edge of div */
+  width: 100%; /*Fits to div */
+  border: none; /*No Border lines, et cetera */
+  transition: 0.4s; /*For on hover have transition*/
+  cursor: pointer; /*Indicates can be clicked*/
+}
+
+.desc{
+  float:left;
+  width:50%;
+}
+
+/*Hover colour on Accordian */
+.activity, .collapsible:hover {
+  background-color: gray;
+}
+
+
+/*For content*/
+/*Width and float is quite self explanatory*/
+/*Float is which direction i would push the div to */
+.fleft{
+  width:65%;
+  float:left;
+}
+
+.fright{
+  width:35%;
+  float:right;
+}
+
+/*Image Size */
+.first{
+  height:95%;
+  width:95%;
+}
+
+
+a{
+  color:white;
+}
+
+
+img{
+  border-radius: 15px; /* A little curve on the edges of pictures */
+}
+
+/*Table styling */
+table {
+  border-collapse: collapse ;
+  margin-left:15%;
+}
+
+td {
+  padding : 10px;
+}
+
+
+
+/*Responsiveness for content*/
+@media(max-width:392px){
+  /*Width 100% so as to fit to screen*/
+
+  .fright{
+    width:100%
+  }
+  .fleft{
+    width:100%
+  }
+  .desc{
+    width:100%
+  }
+}

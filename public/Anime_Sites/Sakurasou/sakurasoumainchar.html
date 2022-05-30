@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pick Your Characters!</title>
+    <!-- image for logo -->
+    <link rel="icon" href="../../ImageFiles/logo.webp">
+    <!-- css fils -->
+    <link rel="stylesheet" href="chars.css">
+    <link rel="stylesheet" href="../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../CSSfiles/loadingscreen.css">
+    <link rel="stylesheet" href="../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="sakurasougeneral.css">
+    <!-- for fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="header" id="scroll">
+      <a href="../../index.html" class="logo" id="bypass"><img src=../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- responsiveness (mobile) -->
+        <input type="checkbox" id="check">
+        <!-- hamburger -->
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+
+        <!-- navbar links -->
+        <ul class="navR" id="navbarR">
+          <li id="searchresp">
+            <!-- search bar -->
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- search bar links -->
+            <div id="select">
+              <p><a href="sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+      <!-- back to top button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+      <h1 style="text-align:center ; color:white;">Choose your Character!</h1>
+    </div>
+    <!--sidebar -->
+    <div class="sidenav">
+      <a href="sakurasou.html" class="about">About</a>
+      <a id="active"  href="sakurasoumainchar.html" class="char">Characters</a>
+      <a href="easteregg.html" class="easter">Easter Eggs</a>
+      <a href="manga.html" class="manga">Manga / LN</a>
+    </div>
+
+    <!-- selection div -->
+    <div class="content">
+      <div class="sorata"><a href="characters/sorata.html"><span>Sorata Kanda</span></a></div>
+      <div class="shiina"><a href="characters/shiina.html"><span>Shiina Mashiro</span></a></div>
+      <div class="jin"><a href="characters/jin.html"><span>Jin Mitaka</span></a></div>
+      <div class="misaki"><a href="characters/misaki.html"><span>Misaki Kamiigusa</span></a></div>
+      <div class="ryuunosuke"><a href="characters/ryuunosuke.html"><span>Ryuunosuke Akasaka</span></a></div>
+      <div class="aoyama"><a href="characters/aoyama.html"><span>Aoyama Nanami</span></a></div>
+      <div class="others"><a href="characters/others/others.html"><span>Others</span></a></div>
+    </div>
+
+    <!-- footer -->
+    <div style="margin-top:5%;z-index: 1;
+      position:relative;">
+      <!-- specialised box on footer -->
+      <div id="footer2" class="overlapbox">
+        <p>
+          Recommendation: <a target="_blank" href="https://myanimelist.net/anime/4224/Toradora">Toradora</a><br />
+          Its made by the same studio and also it is another romantic comedy that i highly recommend to others. Look at this site to find out more
+        </p>
+        <p class="disclaimer">
+          Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers.
+        </p>
+      </div>
+      <!-- standardised footer (referenced) -->
+      <div class="footer">
+        <div class = "l0go">
+          <img style="width:50%;height:50%;" src="../../ImageFiles/logo.webp" alt="Logo">
+        </div>
+        <!-- footer links -->
+        <div class="container">
+          <div class="row">
+            <div class="footercontent">
+              <h4>Sakurasou</h4>
+              <ul>
+                <li><a href="sakurasou.html">About</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="manga.html">Manga</a></li>
+                <li><a href="easteregg.html">Easter Eggs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Kimi No Na Wa</h4>
+              <ul>
+                <li><a href="../Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                <li><a href="../Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                <li><a href="../Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                <li><a href="../Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Takayan</h4>
+              <ul>
+                <li><a href="../../Music_Sites/Takayan/takayan.html">About</a></li>
+                <li><a href="../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Tuyu</h4>
+              <ul>
+                <li><a href="../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                <li><a href="../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Feedback</h4>
+              <ul>
+                <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                <li><a href="../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                <li><a href="../../Feedback/faq.html">FAQs</a></li>
+              </ul>
+            </div>
+            <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--loading screen -->
+    <div class="loader" id="loader">
+      <img src="../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- JS -->
+    <script src="../../Javascript/loadingscreen.js" ></script>
+  </body>
+</html>

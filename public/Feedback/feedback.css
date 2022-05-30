@@ -1,0 +1,165 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./images/background.webp);
+  color:white;
+}
+
+
+
+/*breadcrumbs*/
+/*all pages of feedback */
+/*referred to w3schools*/
+
+ul.breadcrumb {
+  padding: 10px 16px; /*centers text in the div */
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top:8vh; /*distance from the top */
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white; /*color of slash */
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/*faq/acknowledgement.html*/
+/*content arrangement*/
+.fbleft{
+  float:left;
+  width:40%;
+  margin-top: 20vh;
+  padding:0 20px; /*feedback text doesnt touch edge of screen */
+}
+
+.fbright{
+  float:right;
+  width:50%;
+  margin-top: 20vh;
+}
+
+/*centers div in the middle of screen */
+.synopsis{
+    margin: 56px 100px;
+    border: 1px solid white ;
+  }
+
+/*for list styling, !important because it can be overrided */
+.synopsis ul {
+  list-style-type: circle !important;
+  padding-left: 40px !important;
+
+}
+
+/*feedback.html*/
+/*form style*/
+  input[type=number]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /*indicates interactible */
+  }
+
+  input[type=reset] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/*color on hover of buttons */
+  input[type=submit]:hover {
+    background-color:#ffcccb ;
+    color:black;
+  }
+
+  input[type=reset]:hover {
+    background-color: #ffcccb;
+    color:black;
+  }
+
+  a{
+    color:cyan;
+  }
+
+/*form submission.html*/
+/*Styling of data collected and return button*/
+  .backbut{
+    display:block;
+    border:1px solid white;
+    padding:25px;
+  }
+
+  .data{
+    background-color:rgba(0,0,0,0.57);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin:25vh 10vw;
+    text-align:center;
+  }
+
+/*responsiveness*/
+/*full width */
+@media only screen and (max-width: 1255px){
+  .synopsis{
+    width:100vw;
+    margin:0;
+  }
+}
+
+
+@media(max-width: 845px){
+  .fbright{
+    width:100%;
+  }
+
+  .fbleft{
+    width:90%;
+  }
+}

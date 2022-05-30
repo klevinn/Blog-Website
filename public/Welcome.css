@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: robotomedium ;
+  background-color: rgba(0, 0, 0);
+}
+
+.background-image {
+  width: 100%; /*fit screen*/
+  height: 100%; /*fit screen*/
+  /*left: 0;
+  top: 0;*/
+  position: absolute;
+  background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(Welcome_Images/Background.webp) no-repeat left center / cover;
+  z-index: 0;
+}
+
+
+.welcome{
+  margin: 0; /*positioning*/
+  padding:0; /*positioning*/
+  text-align: center; /*positioning*/
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%); /*how much it moves on the x and y axis */
+  color:white;
+}
+
+hr{
+  width:200px;
+}
+
+/*Responsiveness*/
+/*Text fits on screen on mobile, not too big*/
+
+@media screen and (max-device-width: 1023px){
+  .welcome{
+    font-size:smaller;
+  }
+}
+
+@media screen and (max-device-width:831px){
+  .welcome{
+    font-size:smaller;
+  }
+}

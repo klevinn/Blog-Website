@@ -1,0 +1,40 @@
+
+
+/*Banner image*/
+.toppity{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./KimiNoNaWa_Images2/kiminonawabg.webp);
+
+}
+
+/*image styling */
+.inform img{
+  /*gives round black image */
+  border:1px solid black;
+  border-radius:15px;
+  height:100%;
+  width:100%;
+}
+
+/*alignment of content*/
+.fleft{
+  float:left;
+  width:80%;
+}
+
+
+.fright{
+  float:right;
+  width:20%;
+  height:100%;
+}
+
+/*responsive max width*/
+@media(max-width:480px){
+  .fright{
+    width:100%;
+  }
+  .fleft{
+    width:100%;
+  }
+}

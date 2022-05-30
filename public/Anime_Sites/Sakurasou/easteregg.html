@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easter Eggs!</title>
+    <!-- image for logo -->
+    <link rel="icon" href="../../ImageFiles/logo.webp">
+    <!-- css files -->
+    <link rel="stylesheet" href="eggs.css">
+    <link rel="stylesheet" href="../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../../CSSfiles/sidebar.css">
+    <link rel="stylesheet" href="sakurasougeneral.css">
+    <link rel="stylesheet" href="../../CSSfiles/loadingscreen.css">
+    <!-- fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+      /* makes list items abit further apart */
+      li:not(:last-child) {
+        margin-bottom: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <a href="../../index.html" class="logo" id="bypass"><img src=../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- responsiveness(mobile)-->
+        <input type="checkbox" id="check">
+        <!-- hamburger -->
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- navbar links -->
+        <ul class="navR" id="navbarR">
+          <li id="searchresp">
+            <!--searchbar-->
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- search bar links -->
+            <div id="select">
+              <p><a href="sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header -->
+    <div class=toppity>
+      <h1>Easter Eggs of <i>Sakurasou</i></h1>
+      <h3>Scroll to read more</h3>
+    </div>
+    <!-- Content -->
+    <div class = anime_info>
+      <!--sidebar -->
+      <nav class="main-menu">
+        <!-- sidebar links -->
+        <ul>
+          <li>
+            <a href="./sakurasou.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./sakurasoumainchar.html">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <span class="nav-text">
+            Characters
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./easteregg.html">
+            <i class="fa fa-etsy fa-2x"></i>
+            <span class="nav-text">
+            Easter Eggs
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="./manga.html">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text">
+            Manga / LN
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--content-->
+      <div class=inform>
+        <!--back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+        <!-- content -->
+        <h2 style="text-align:center; ">Easter Eggs</h2>
+        <h3>These References/Easter Eggs are found throughout the whole Anime</h3>
+        <ul class="lol">
+          <li style="list-style-type:none;">
+            <h2>Toradora References (Made By Same Studio)</h2>
+            <ol>
+              <li>
+                Rita Ainsworth is just Ami Kawashima from Toradora <br />
+                Their appearance are similar in terms of Rita just being a blonde version of Ami. (Similar Hairstyle and et cetera) <br />
+                They are also similar in personality as they are the types to consider themselves pretty girls <br />
+                <img src="./sakurasou_images2/ami.webp" alt="Easter Egg Images" height=100 width=200>
+                <img  src="./sakurasou_images2/rita.webp" alt="Easter Egg Images" height=100 width=100>
+              </li>
+
+              <li>
+                Ryuunosuke and Ryuuji both have names relating to the Japanese word for Dragon, Ryuu 竜 <br />
+                Also sharing the same trait of them both being social rejects, at the beginning they both only have like 1 'friend'
+              </li>
+
+              <li>
+                Misaki Kamiigusa and Minori Kushieda are just the same girl different appearance?!?! <br />
+                They both have similar personalities of acting crazy / screaming a lot without feeling a shred of embarrassment.
+                They both hide their true selves as well / like to face things in private instead
+              </li>
+
+              <li>
+                Aoyama Nanami's favourite plush toy is just a reference to Taiga the chatacter from Toradora. <br />
+                Aoyama's favourite plus toy being a Tiger, and Taiga, known as the Palmtop Tiger. The link could not be more obvious!
+              </li>
+            </ol>
+          </li>
+
+          <li style="list-style-type:none;">
+            <h2>Initial D / Fast and Furious References</h2>
+            <p>
+              There is a particular scene in Sakurasou that references / similar to any racing anime or show
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2AaV7TJiwBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+          </li>
+
+          <li style="list-style-type:none;">
+            <h2>Lastly other animes have also referenced Sakurasou No Pet Na Kanojo</h2>
+            <p>
+              Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai, AKA Rascal Does Not Dream of Bunny Girl Senpai, referenced the school in Sakurasou No Pet Na Kanojo. <br />
+              <img class="scoreb" src="./sakurasou_images2/cool.webp" alt="Easter Egg Images"> <br />
+              <br />
+              This image is from Seishun Buta Yarou, it shows the scoreboard of a basketball game that happened during the anime. <br />
+              The name on the left side is 水明芸術大学附属高校, which means Suimei University Of The Arts. The school Kanda and Sorata attends.
+            </p>
+          </li>
+        </ul>
+        <h2 style="text-align:center">Extra Notes:</h2>
+        <h3>I probably missed many Easter eggs but these are the currently well-known ones. I read up about these easter eggs through Reddit and also through watching over many scenes from the anime again. I do apologise if I missed any.</h3>
+      </div>
+
+      <!--footer -->
+      <div style="margin-top:5%; position:relative;
+        z-index:1;">
+        <div id="footer2" class="overlapbox">
+          <!-- specialised box on footeere -->
+          <p>
+            Recommendation: <a target="_blank" href="https://myanimelist.net/anime/4224/Toradora">Toradora</a><br />
+            Its made by the same studio and also it is another romantic comedy that i highly recommend to others. Look at this site to find out more
+          </p>
+          <p class="disclaimer">
+            Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers.
+          </p>
+        </div>
+
+        <!--standardised footer (referenced) -->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%;height:50%" src="../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- footer links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="sakurasou.html">About</a></li>
+                  <li><a href="sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="manga.html">Manga</a></li>
+                  <li><a href="#">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                  <li><a href="../Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                  <li><a href="../Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                  <li><a href="../Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                  <li><a href="../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- loading screen -->
+    <div class="loader" id="loader">
+      <img src="../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- js -->
+    <script src="../../Javascript/loadingscreen.js" ></script>
+    <script ></script>
+  </body>
+</html>

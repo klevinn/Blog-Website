@@ -1,0 +1,46 @@
+
+/*Banner Image*/
+.toppity{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./KimiNoNaWa_Images2/kiminonawabg.webp);
+
+}
+
+
+img{
+  border-radius: 15px; /*Styling of img*/
+}
+
+
+/*For content (placement of images et certera)*/
+/*Float is which direction i push it to */
+.zimagel{
+  float:left;
+  width:50%;
+}
+
+.zimager{
+  float:right;
+  width:50%;
+}
+
+/*Image Size*/
+.twobyfour{
+  height:200px;
+  width:400px;
+}
+
+/*Responsiveness, switches to full width of screen*/
+@media(max-width:800px){
+  .zimagel{
+    width:100%;
+  }
+  .zimager{
+    width:100%;
+  }
+}
+@media(max-width:450px){
+  .twobyfour{
+    width:100%;
+  }
+}

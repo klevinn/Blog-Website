@@ -1,0 +1,306 @@
+/*Footer was referred to by a youtube tutorial: https://youtu.be/YOb67OKw62s*/
+/*Partial CSS was kept the same, however i changed some values to fit my site*/
+
+/* to align the footer in the centre */
+.container {
+	max-width: 1170px;
+	margin-left:35%;
+}
+
+/*makes the items wrap if needed */
+.row {
+	display: flex !important;
+	flex-wrap: wrap !important;
+}
+
+/*footer uses lists, so it gets rid of the bullet points */
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+/*design of the footer */
+/*padding to arrange text */
+.footer {
+	background-color: black;
+  padding: 200px 0 70px 0;
+}
+
+/*width */
+.footercontent {
+  width: 20%;
+}
+
+/*styling of h4*/
+.footercontent h4 {
+	font-size: 1.2em;
+	color: #fff;
+	margin-bottom: 35px; /*distance from this and the links */
+	font-weight: 500; /*how bold it is*/
+	position: relative;
+}
+
+
+/* applies margin-bottom to all except the last element at the very bottom */
+.footercontent li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+/* styling of <a>*/
+.footercontent a {
+	text-decoration: none;
+	font-size: 1em;
+	color: #bdbab3;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+/*increase size of text on hover */
+.footercontent a:hover {
+	color: #ffffff;
+	font-size: 1.25em;
+}
+
+/*styling of copyright*/
+#copyright {
+	margin: auto;
+	font-size: 16px;
+	color: #bdbab3;
+}
+
+/*Non Referenced*/
+
+/*Place a box/div of content on the top border of footer*/
+.overlapbox{
+  position: static; /* Reposition logo from the natural layout */
+  background-color: white;
+	margin:0 22%; /*distance from left n right of screen */
+  width: 57vw; /*values im happy wwith */
+  height: 200px; /*values im happy wwith */
+  z-index: 2; /* to overlap the footer (z-index 1) */
+	/*styling of border */
+  border: 1px solid black;
+  border-radius: 20px;
+  transform: translateY(100px); /*moves it on the y axis */
+	padding:25px;
+	overflow:hidden;
+	color:white;
+}
+
+/*for images in the box */
+.overlapbox img{
+	height:60%;
+	width:60%;
+}
+
+/*for larger screens*/
+@media(min-width:1700px){
+	.overlapbox img{
+		height:45%;
+		width:45%;
+	}
+}
+
+/*logo on left side */
+.l0go{
+	float:left;
+}
+
+/*Contact */
+/*partially referenced, changed majority as it doesnt fit my site initially*/
+/*all .hide is to hide the text that is overlapping the img*/
+/*on hover text is shown*/
+
+.hide {
+ display: none;
+ /*placement of text in the middle of image */
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /*where it moves on the x and y axis */
+}
+
+/*design of links that are shown */
+.Email:hover + .hide {
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*positioning of images */
+.gmail {
+  position: relative;
+  text-align: center;
+  float:left;
+  width: 20%;
+}
+
+
+.hideI {
+ display: none;
+ position: absolute;
+ /*placement of text in the middle of image */
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /*where it moves on the x and y axis */
+}
+
+/*design of links that are shown */
+.Gram:hover + .hideI {
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*positioning of images */
+.insta {
+  position: relative;
+  text-align: center;
+  float:left;
+  width: 20%;
+}
+
+.hideT {
+  display: none;
+	/*placement of text in the middle of image */
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /*where it moves on the x and y axis */
+}
+
+/*design of links that are shown */
+.Twitter:hover + .hideT {
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*positioning of images */
+.twit {
+  position: relative;
+  text-align: center;
+  float:left;
+  width: 20%;
+}
+
+.hideD {
+  display: none;
+	/*placement of text in the middle of image */
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /*where it moves on the x and y axis */
+}
+
+/*design of links that are shown */
+.Discord:hover + .hideD {
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*positioning of images */
+.disc {
+  position: relative;
+  text-align: center;
+  float:left;
+  width: 20%;
+}
+
+.hideN {
+  display: none;
+	/*placement of text in the middle of image */
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /*where it moves on the x and y axis */
+}
+
+/*design of links that are shown */
+.Number:hover + .hideN {
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*positioning of images */
+.num {
+  position: relative;
+  text-align: center;
+  float:left;
+  width: 20%;
+}
+
+/*Content pages overlap box*/
+/*for disclaimer */
+.disclaimer{
+	font-size: 0.5em;
+	margin-top:8%;
+}
+
+/*Responsiveness*/
+
+@media(max-width: 1320px){
+	.l0go{
+		display:none; /*Makes the footer only text, easier to deal with*/
+	}
+}
+
+
+@media(max-width:1010px){
+	/*makes the box on footer full width of screen */
+	.overlapbox{
+		 margin:0;
+		 width:100%;
+	}
+	/*makes there be no padding so the size of the footer fits */
+	#footer2{
+		padding:0;
+		font-size:larger; /*text easier to read */
+	}
+	/*to see the email (on phone gets cut off)*/
+	.hide{
+		z-index: 1;
+		font-size: 0.55em;
+	}
+}
+
+/*gets rid of the margin so that it hugs the right side of screen */
+@media(max-width:1320px){
+	.footer .container{
+		margin:0;
+}
+
+/*helps to fit the links */
+@media(max-width: 890px) {
+  .footercontent {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+}
+
+/*helps to see the .disclaimer content */
+@media(max-width:650px){
+	.disclaimer{
+		margin:0;
+	}
+}
+
+/*footer fits to screen*/
+@media(max-width: 574px) {
+  .footercontent {
+    width: 100%;
+  }
+}
+
+/*on phone footer fits to screen and no glitchy/unseen text */
+@media(max-device-width:432px){
+  .container{
+    margin:0;
+  }
+	.disclaimer{
+		display:none;
+	}
+}

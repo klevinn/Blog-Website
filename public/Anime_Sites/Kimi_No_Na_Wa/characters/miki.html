@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Characters</title>
+    <!-- Logo for the Tab -->
+    <link rel="icon" href="../../../ImageFiles/logo.webp">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="chars.css">
+    <link rel="stylesheet" href="../../../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/sidebar.css">
+    <link rel="stylesheet" href="../../../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../knnwgeneral.css">
+    <link rel="stylesheet" href="../../../CSSfiles/loadingscreen.css">
+    <!-- For Fa-Icons to work -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <!-- Logo -->
+      <a href="../../../index.html" class="logo" id="bypass"><img src=../../../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+      <div class="header-right">
+        <!-- Responsiveness (For Mobile) -->
+        <input type="checkbox" id="check">
+        <!-- Hamburger -->
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- Navbar links -->
+        <ul class="navR" id="navbarR">
+          <!-- Search Bar -->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!-- Links that can be accessed by Search Bar -->
+            <div id="select">
+              <p><a href="../../Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../../Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../../Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../../Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../../Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../../Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../../Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../../Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../../Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../../Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../../Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../../../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../../../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../../../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a class="active" id="activeT" href="../../../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a href="../../../AboutMe/aboutme.html">About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <!--Banner on Phone-->
+    <div class=toppity>
+      <h1><i>Miki Okudera</i></h1>
+      <h3>Scroll to read more</h3>
+    </div>
+    <!-- Content -->
+    <div class = animeK_info>
+      <!--sidebar -->
+      <!--Referenced from https://codepen.io/JFarrow/pen/fFrpg?editors=1100, changed to fit my website -->
+      <!-- Cleaned up code -->
+      <nav class="main-menu">
+        <!-- Sidebar links -->
+        <ul>
+          <li>
+            <a href="../kiminonawwa.html">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+            About
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../knnwchars.html">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <span class="nav-text">
+            Characters
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../knnweastereggs.html">
+            <i class="fa fa-etsy fa-2x"></i>
+            <span class="nav-text">
+            Easter Eggs
+            </span>
+            </a>
+          </li>
+          <li class="has-subnav">
+            <a href="../knwmanga.html">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text">
+            Manga / LN
+            </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--content-->
+      <div class = "inform">
+        <!--Back to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <!--Feature to scroll to a certain part of the page-->
+        <nav class="redirect">
+          <a style="width:33%" href="#about">About</a>
+          <a style="width:33%" href="#Relationships">Relationships</a>
+          <a style="width:33%" href="#facts">Fun Facts</a>
+          <br style="clear:both;">
+        </nav>
+        <!--Content-->
+        <div class="fleft">
+          <h2 style="text-align:center;">About Miki Okudera</h2>
+          <p>
+            Appearance : Okudera is an attractive lady with wavy mid-length maroon hair which she wears in a ponytail and amber eyes. She has a fair complexion and is often seen wearing red lipstick. Anywhere but her workplace , she normally lets her hair down or in another hair style. As she grew older, her facial features remain similar, but she normally leaves her hair untied.<br />
+            &nbsp; <br />
+            Japanese Name : 奥寺 ミキ <br />
+            &nbsp; <br />
+            Gender : Female <br />
+            &nbsp; <br />
+            Birthday : January 22, 1992<br />
+            &nbsp; <br />
+            Zodiac : Aquarius<br />
+            &nbsp; <br />
+            Occupation : Waiter (Beginning)<br />
+            &nbsp; <br />
+          </p>
+
+          <table border="1">
+            <tr>
+              <td>Japanese VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/6329/Masami_Nagasawa">Masami Nagasawa</a></td>
+            </tr>
+            <tr>
+              <td>English VA</td>
+              <td><a target="_blank" href="https://myanimelist.net/people/13705/Laura_Post">Laura Post</a></td>
+            </tr>
+            <tr>
+              <td>Mandarin VA</td>
+              <td><a href="#">Unknown</a></td>
+            </tr>
+          </table>
+        </div>
+
+        <!--Interactiveness -->
+        <div class="fright">
+          <audio id="audio" src="./charsounds/mikivoice.mp3"></audio>
+          <a href="#" id="play">
+          <img class="first" src="./charimages2/youngermiki.webp" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Character Logo">
+          </a>
+          <h4 style="text-align:center">Hover to see his future self!</h4>
+          <h4 style="text-align:center">Click to hear voicelines!</h4>
+        </div>
+        <br style="clear:both;">
+
+        <!--Given an ID as the nav redirects to here -->
+        <hr id="about">
+        <!--Content-->
+        <p>
+          About: Miki Okudera is a side character in the movie <i>Kimi No Na Wa</i>. She was Taki's co-worker and Taki initially had a crush on her.Nothing much can be said about her. She was known as Okudera Senpai by Taki Tachibana, which basically means senior Okudera in Japanese<br />
+          <br />
+          &nbsp;<br />
+          Personality : Okudera has a girly personality, purposefully being attractive. She likes smoking also stating that she is unable to stop<br />
+        </p>
+        <br />
+
+        <!--Given an ID as the nav redirects to here -->
+        <hr id="Relationships">
+        <h2 style="text-align:center;">Relationships</h2>
+        <h2>Family</h2>
+        <p>
+          Mother: Unknown<br />
+          Father:  Unknown<br />
+          Grandmother : Unknown<br />
+          &nbsp;<br />
+        </p>
+        <h2>Friends</h2>
+        <p>
+          <a href="./tsukaa.html">Tsukasa Fuji</a><br />
+          &nbsp;<br />
+          They met only at the later part of the movie when Taki asked his friends for help to find Itamori. They then became closer and friends on the trip <br />
+          &nbsp;<br />
+          <a href="./mitsuha.html">Mitsuha Miyamizu</a><br />
+          &nbsp;<br />
+          Miku Okudera never met Mitsuha Miyamizu in real life. However, they did meet through Taki. As in she was in Taki's body when they met. Though to Miku, it felt more like meeting Taki Tachibana's girly side, which she found cute.
+        </p>
+        <h2>Co-Workers</h2>
+        <p>
+          <a href="./taki.html">Taki Tachibana(Also Friend)</a><br />
+          &nbsp;<br />
+          Seen on <a href="taki.html#Relationships"><i>Taki Tachibana's</i></a> page.
+        </p>
+        <br />
+
+        <!--Given an ID as the nav redirects to here -->
+        <hr id="facts">
+        <h2 style="text-align:center">Fun Facts!</h2>
+        <p>
+          She was engaged at the end of the movie! However, I won't spoil to who, watch the movie to find out!
+        </p>
+      </div>
+
+      <!--Footer-->
+      <div style="margin-top:5%; z-index: 1; position:relative;">
+        <!-- Specialised Box on the footer -->
+        <div id="footer2" class="overlapbox">
+          <p>
+            Recommendation: <a target="_blank" href="https://myanimelist.net/anime/28851/Koe_no_Katachi">A Silent Voice</a> <br />
+            Its a Romantic Drama Movie that i highly recommend. It is able to trigger many emotions in me and also is able to show the problems the characters are tackling in depth
+          </p>
+          <p class="disclaimer">
+            Disclaimer : I did not touch much into the story because this is a blog that is sharing a bit of information of the Anime just to get you started. Hence, there are no major plot points mentioned and also there will be minimal spoilers
+          </p>
+        </div>
+
+        <!--Generalised Footer-->
+        <div class="footer">
+          <div class = "l0go">
+            <img style="width:50%; height:50%" src="../../../ImageFiles/logo.webp" alt="Logo">
+          </div>
+          <!-- Footer Links -->
+          <div class="container">
+            <div class="row">
+              <div class="footercontent">
+                <h4>Sakurasou</h4>
+                <ul>
+                  <li><a href="../../Sakurasou/sakurasou.html">About</a></li>
+                  <li><a href="../../Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                  <li><a href="../../Sakurasou/manga.html">Manga</a></li>
+                  <li><a href="../../Sakurasou/easteregg.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Kimi No Na Wa</h4>
+                <ul>
+                  <li><a href="../kiminonawwa.html">About</a></li>
+                  <li><a href="../knnwchars.html">Characters</a></li>
+                  <li><a href="../knwmanga.html">Manga</a></li>
+                  <li><a href="../knnweastereggs.html">Easter Eggs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Takayan</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/Takayan/takayan.html">About</a></li>
+                  <li><a href="../../../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Tuyu</h4>
+                <ul>
+                  <li><a href="../../../Music_Sites/TUYU/tuyu.html">About</a></li>
+                  <li><a href="../../../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+                </ul>
+              </div>
+              <div class="footercontent">
+                <h4>Feedback</h4>
+                <ul>
+                  <li><a href="../../../Feedback/feedback.html">Feedback</a></li>
+                  <li><a href="../../../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                  <li><a href="../../../Feedback/faq.html">FAQs</a></li>
+                </ul>
+              </div>
+              <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Loading Screen-->
+    <div class="loader" id="loader">
+      <img src="../../../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- Javascript -->
+    <script src="../../../Javascript/loadingscreen.js"></script>
+    <script>
+      document.getElementById('play').addEventListener('click', function (e) {
+        e.preventDefault(); //Cancels link redirect
+        document.getElementById('audio').play(); //Plays Audio on click
+      });
+
+      //On Hover and unhover, image changes ()
+      function hover(element) {
+        element.setAttribute('src', './charimages2/oldermiki.webp');
+
+      };
+
+      function unhover(element) {
+        element.setAttribute('src', './charimages2/youngermiki.webp');
+      };
+
+      //Arrow Functions (simplified functions)
+      //On Click of link allows smooth scrolling towards
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault(); //If link redirects to other page, it gets cancelleed
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth' //Smooth scrolling into view
+          });
+        });
+      });
+
+    </script>
+  </body>
+</html>

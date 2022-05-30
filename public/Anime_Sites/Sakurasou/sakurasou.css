@@ -1,0 +1,27 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./sakurasou_images2/contentbackground.webp);
+  background-position:center; /*bg image positioning */
+}
+
+
+/*Banner*/
+.toppity{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./sakurasou_images2/sakurasoubannerbg.webp);
+}
+
+
+/*styling */
+
+table{
+  border-collapse: collapse;
+  margin: auto;
+  border-width: 5px;
+}
+
+/*table content dont touch the edges */
+td{
+  padding: 10px;
+
+}

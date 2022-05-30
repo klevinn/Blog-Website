@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <!--Link to Image for Logo in Tab -->
+    <link rel="icon" href="../ImageFiles/logo.webp">
+    <!--Link to CSS Files-->
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="../CSSfiles/navbar.css">
+    <link rel="stylesheet" href="../CSSfiles/footer.css">
+    <link rel="stylesheet" href="../CSSfiles/loadingscreen.css">
+    <!--Link to CSS File to get Fa-icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div id="scroll" class="header">
+      <!-- Logo -->
+      <a href="../index.html" class="logo" id="bypass"><img src=../ImageFiles/logo.webp alt="Logo" width = 30 height = 30></a>
+
+      <!-- Navbar Links Div -->
+      <div class="header-right">
+        <!-- For NavBar Responsiveness(Mobile) -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <!-- Hamburger -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <!-- Navbar Links -->
+        <ul class="navR" id="navbarR">
+          <!--Searchbar-->
+          <li id="searchresp">
+            <input type="text" name="search" id="animesearch" placeholder="Search.." onkeyup="filter()">
+            <!--These are the links you can access through searchbar-->
+            <div id="select">
+              <p><a href="../Anime_Sites/Sakurasou/sakurasou.html">Sakurasou: About</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/sakurasoumainchar.html">Sakurasou: Characters</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/manga.html">Sakurasou: Manga/LN</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/easteregg.html">Sakurasou: Easter Egg</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/aoyama.html">Sakurasou: Aoyama</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/sorata.html">Sakurasou: Sorata</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/shiina.html">Sakurasou: Shiina</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/ryuunosuke.html">Sakurasou: Ryuunosuke</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/jin.html">Sakurasou: Jin</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/misaki.html">Sakurasou: Misaki</a></p>
+              <p><a href="../Anime_Sites/Sakurasou/characters/others/others.html">Sakurasou: Others</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">Kimi No Na Wa: About</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Kimi No Na Wa: Characters</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Kimi No Na Wa: Manga/LN</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Kimi No Na Wa: Easter Egg</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/taki.html">Kimi No Na Wa: Taki</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/mitsuha.html">Kimi No Na Wa: Mitsuha</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/miki.html">Kimi No Na Wa: Miki</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/tsukaa.html">Kimi No Na Wa: Tsukasa</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/tessie.html">Kimi No Na Wa: Teshigawara</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/sayaka.html">Kimi No Na Wa: Sayaka</a></p>
+              <p><a href="../Anime_Sites/Kimi_No_Na_Wa/characters/others/others.html">Kimi No Na Wa: Others</a></p>
+              <p><a href="../Music_Sites/Takayan/takayan.html">Takayan : About</a></p>
+              <p><a href="../Music_Sites/Takayan/takasongs.html">Takayan : Top Songs</a></p>
+              <p><a href="../Music_Sites/TUYU/tuyu.html">TUYU : About</a></p>
+              <p><a href="../Music_Sites/TUYU/tuyusongs.html">TUYU : Top Songs</a></p>
+            </div>
+          </li>
+          <li><a href="../Feedback/feedback.html">Feedback</a></li>
+          <li><a href="../Main_Pages/mainmusic.html">Musician</a></li>
+          <li><a href="../Main_Pages/mainanime.html">Anime</a></li>
+          <li><a id="activeT" class="active" href=#>About Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Didnt Implement(Supposed to be a video of me)/used as a banner-->
+    <div class=video>
+      <!--video src="" autoplay poster=""></video-->
+    </div>
+
+    <!-- Main Div -->
+    <div class="info">
+      <!-- Back to top button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+      <!-- Image of Self -->
+      <h2 class="title"> About Me </h2>
+      <img style="float:left;" src="../ImageFiles/About_Me/aboutmePerson.webp" alt="Self-Portrait" width="350">
+
+      <!-- Content -->
+      <div class="person">
+        <h2>Calvin Lai</h2>
+        <h3>Student At NYP</h3>
+        <br />
+        <p style="font-size:1.15em;">
+          Hi! I am Calvin Lai. I am the creator of this website. Well you probably already knew that from the video. This page will be all About Me as you can see!
+          <br />
+          <br />
+          I am a Student Of NYP, Cybersecurity & Digital Forensics Course. I graduated from Edgefield Secondary School.
+          My Previous CCA was Choir! My current CCA is Sakurasan Japanese Culture Club.
+          <br />
+          <br />
+          Wanna know a little more? Read on.
+          <br />
+          <br />
+          My favourite sports are Basketball and Floorball, I would consider myself decent in both sports. Other things I like doing are things like reading manga(Japanese Comics), watching Anime (Japanese Anime) and listening to Japanese Music. As you can see, I am very interested in Japanese Culture. Thus leading to the reason why i made this website!
+          <br />
+          <br />
+          Hmmmm? What else do you guys need to know? Well you can let me know by contacting me! All infos down at the bottom!
+        </p>
+      </div>
+
+      <!-- Large Text-->
+      <h1>"Self Praise is No Praise!"</h1>
+      <h3 class=sign>~Calvin :D</h3>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="margin-top:5%" class="f00t">
+      <!-- Large Box On Footer that overlaps the top border of the footer -->
+      <div id="footer2" class="overlapbox">
+        <!--I use inline styles for my convenience -->
+        <h2 style="text-align:center ; color:black; margin:0;">Contact Me</h2>
+        <h6 style="text-align:center ; color:black;">Psst! Hover over the icons for the details!</h6>
+        <!-- Image Divs where on hover my contact details appear -->
+        <!-- Those with class hide is hidden till hovered on -->
+        <div class="gmail">
+          <img class="Email" src="../ImageFiles/About_Me/gmail.webp" alt="Gmail Logo">
+          <div class="hide">calvinlyn11@gmail.com</div>
+        </div>
+        <div class="insta">
+          <img class="Gram" src="../ImageFiles/About_Me/insta.webp" alt="Instagram Logo">
+          <div class="hideI">@calpinn.__</div>
+        </div>
+        <div class="twit">
+          <img class="Twitter" src="../ImageFiles/About_Me/twitter.webp" alt="Twitter Logo">
+          <div class="hideT">@mrweeaboo_</div>
+        </div>
+        <div class="disc">
+          <img class="Discord" src="../ImageFiles/About_Me/disc.webp" alt="Discord Logo">
+          <div class="hideD">noisy#6969</div>
+        </div>
+        <div class="num">
+          <img class="Number" src="../ImageFiles/About_Me/phone.webp" alt="Phone Logo">
+          <div class="hideN">+6593257723</div>
+        </div>
+      </div>
+
+      <!-- Generalised footer content-->
+      <div class="footer">
+        <!-- Logo at the side of the footer -->
+        <div class = "l0go">
+          <img style="width:50% ; height:50%" src="../ImageFiles/logo.webp" alt="Logo">
+        </div>
+        <!-- Easy navigation to respective sites -->
+        <div class="container">
+          <div class="row">
+            <div class="footercontent">
+              <h4>Sakurasou</h4>
+              <ul>
+                <li><a href="../Anime_Sites/Sakurasou/sakurasou.html">About</a></li>
+                <li><a href="../Anime_Sites/Sakurasou/sakurasoumainchar.html">Characters</a></li>
+                <li><a href="../Anime_Sites/Sakurasou/manga.html">Manga</a></li>
+                <li><a href="../Anime_Sites/Sakurasou/easteregg.html">Easter Eggs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Kimi No Na Wa</h4>
+              <ul>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/kiminonawwa.html">About</a></li>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/knnwchars.html">Characters</a></li>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/knwmanga.html">Manga</a></li>
+                <li><a href="../Anime_Sites/Kimi_No_Na_Wa/knnweastereggs.html">Easter Eggs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Takayan</h4>
+              <ul>
+                <li><a href="../Music_Sites/Takayan/takayan.html">About</a></li>
+                <li><a href="../Music_Sites/Takayan/takasongs.html">Top Songs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Tuyu</h4>
+              <ul>
+                <li><a href="../Music_Sites/TUYU/tuyu.html">About</a></li>
+                <li><a href="../Music_Sites/TUYU/tuyusongs.html">Top Songs</a></li>
+              </ul>
+            </div>
+            <div class="footercontent">
+              <h4>Feedback</h4>
+              <ul>
+                <li><a href="../Feedback/feedback.html">Feedback</a></li>
+                <li><a href="../Feedback/acknowledgement.html">Acknowledgement</a></li>
+                <li><a href="../Feedback/faq.html">FAQs</a></li>
+              </ul>
+            </div>
+            <p id="copyright">&copy; 2021 Calvin's Anime Site. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+      <img src="../ImageFiles/logo.webp" alt="Logo">
+    </div>
+
+    <!-- Javascript File -->
+    <!-- Placed at the bottom so that all variables / classes / IDs are declared already -->
+    <script src="../Javascript/loadingscreen.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+body {
+  margin:0;
+  font-family: robotomedium ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url();
+  background-position:center; /*bg positioning */
+}
+
+
+/*banner*/
+
+h1{
+  /*centering of text */
+  padding-top:15vh;
+  padding-bottom:15vh;
+  margin:0;
+}
+
+/*banner styling */
+.banner{
+  border-bottom:2px solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./sakurasou_images2/charsakbg.webp);
+}
+
+
+
+
+/*Bookmark Sidebar*/
+/*w3schools with modifications */
+
+.sidenav a {
+  position: absolute; /*ignores elements */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s !important; /* Add transition on hover */
+  padding: 15px;
+  width: 100px; /*only 20px of the <a> is shjowing */
+  text-decoration: none;
+  font-size: 15px;
+  color: white !important;
+  border-radius: 0 5px 5px 0;
+}
+
+/*the thing will be showwn on screen */
+.sidenav a:hover {
+  left: 0;
+}
+
+#active{
+  left:0 ;
+}
+
+/*Text in sidenav*/
+/*top is position from the top */
+.about {
+  top: 9vh;
+  background-color: #555;
+}
+
+.char {
+  top: 16vh;
+  background-color: #555;
+}
+
+.easter {
+  top: 23vh;
+  background-color: #555;
+}
+
+.manga {
+  top: 30vh;
+  background-color: #555;
+}
+
+/*selection*/
+.content {
+  display: flex;
+  justify-content: space-between; /*aligns the flex container so thrs space between the divs*/
+  height:69vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./sakurasou_images2/sakurabg.webp);
+}
+
+/*div styling */
+.content > div {
+  flex: 0 0 12%; /*how much space it takes */
+  height: auto;
+  transition: flex-basis 0.3s 0.1s cubic-bezier(0.77, 0, 0.175, 1);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+}
+
+.content > div:hover {
+  flex: 0 0 24%; /*how much it expands */
+}
+
+/*div images */
+.sorata{
+  background-image: url(./sakurasou_images2/sorata.webp)
+}
+
+.shiina{
+  background-image: url(./sakurasou_images2/shiina.webp)
+}
+
+.jin{
+  background-image: url(./sakurasou_images2/jin.webp)
+}
+
+.misaki{
+  background-image: url(./sakurasou_images2/misaki.webp)
+}
+
+.aoyama{
+  background-image: url(./sakurasou_images2/aoyama.webp)
+}
+
+.ryuunosuke{
+  background-image: url(./sakurasou_images2/ryuunosuke.webp)
+}
+
+.others{
+  background-image: url(./sakurasou_images2/otherchars.webp);
+}
+
+/*link styling */
+.content a {
+  display:block; /*dont need to click on words */
+  width:100%; /*can click on the whole div */
+  height:100%;
+  text-decoration:none;
+  color:white;
+}
+
+/*highlights the words*/
+.content span {
+  background-color: rgba(0,0,0,0.7)
+}
+
+/*responsiveness*/
+
+@media screen and (max-device-width: 971px){
+  .content{
+    flex-direction:column; /*makes it vertical*/
+    height:500vh; /*bigger images */
+  }
+}
+
+@media only screen and (max-width:845px){
+  .synopsis{
+    font-size:2em;
+  } /*easier to reead*/
+  /*.footer{
+    font-size:2em;
+  }*/
+}
+@media only screen and (max-width:370px){
+  /*.anime_info{
+    font-size:2.5em;
+  }*/
+  /*helps fit to screen*/
+  table{
+    font-size:0.75em;
+  }
+  .sidenav a{
+    font-size:1.5em;
+
+}
