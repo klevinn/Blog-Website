@@ -1,7 +1,7 @@
 # Blog Website
 
 <h1 align="center">
-    <img src="assets/nyplogo.png" style="width: 50%; height: auto;" alt="NYP logo">
+    <img src="nyplogo.png" style="width: 50%; height: auto;" alt="NYP logo">
     <br>
     Anime / Music Blog Website
     <br>
